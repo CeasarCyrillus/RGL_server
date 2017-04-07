@@ -16,7 +16,8 @@ app = Flask("app")
 def upload_file():
 	if request.method == 'POST':
 		f = request.files['file']
-		if f.filename == "allt.xml" or "lm-data.xml":
+		f2 = request.files['file2']
+		if f.filename == "allt.xml" and f2.filename == "lm-data.xml":
 		    f.save(secure_filename(f.filename))
 		    _thread.start_new_thread(format_data, ())
 		    return 'Filen har laddats upp korrekt, om ca 10min kommer appen att vara uppdaterad'
