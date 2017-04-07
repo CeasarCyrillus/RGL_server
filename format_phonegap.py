@@ -5,10 +5,9 @@ import codecs
 import os
 import requests
 def format_data():
-	with open("config.txt", "r") as f:
-		data = f.readlines();
-		config_lakemedelsform = data[0].replace("\n", "").replace("\r", "");
-		config_allt_xml = data[1].replace("\n", "").replace("\r", "");
+	config_lakemedelsform = "schemas/lexikon/lx-lakemedelsform.xsd";
+	config_allt_xml = "allt.xml"
+
 
 	lx_lakemedelsform = {}
 

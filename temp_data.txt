@@ -1,0 +1,510 @@
+TRISENOX;Koncentrat till infusionsvätska, lösning#7046264594414#
+Nebido;Injektionsvätska, lösning#7046260683167#
+Fluconazol HEXAL;Kapsel, hård#7046260146990, 7046260147782#
+Viskén;Tablett#7322833244424#
+Leuprostin;Implantat#7046261065894#
+Pulmicort Turbuhaler;Inhalationspulver#7046260449305#
+Betahistin 2care4;Tablett#7046263726830#
+Diflucan;Kapsel, hård#7331005186134, 7331005186219#
+Seretide Diskus;Inhalationspulver, avdelad dos#7046260113398, 7046260114418#
+Tegretol Retard;Depottablett#7046265956020#
+Creon 10000;Enterokapsel, hård#7046260784246, 7046260783423#
+Catapres;Injektionsvätska, lösning#7046260673045#
+Spiriva Respimat;Inhalationsvätska, lösning#7046264106808#
+Valsartore Comp;Filmdragerad tablett#7046264958582, 7046261073714#
+Vagifem;Vaginaltablett#7046263823331#
+Mirtazapin Alternova;Filmdragerad tablett#7046260139817, 7046260139701#
+BUCCOLAM;Munhålelösning#5060147020809#
+Terbinafin Orifarm;Tablett#7046260992498, 7046260992603, 7046260992719#
+Mianserin Mylan;Filmdragerad tablett#7046260169722, 7046260787339, 7046260787414, 7046260396654, 7046260396760#
+Panodil Brus;Brustablett#7046265500612, 7046260828193, 7046265596745, 7046261652735#
+Bisoprolol Teva;Tablett#7046261649254#
+Furosemid Recip;Tablett#0000025119497#
+Cabergoline Teva;Tablett#7046260136502, 7046260137264#
+Mydriacyl;Ögondroppar, lösning#7046260431829#
+Retrovir;Filmdragerad tablett#7046265720430#
+Olanzapin Bluefish;Munsönderfallande tablett#7311924081307#
+Proscar;Filmdragerad tablett#7046261360449, 7046261361354#
+Relpax;Filmdragerad tablett#7046265532064, 7046265533399, 7046265589327#
+Enbrel;Pulver till injektionsvätska, lösning#7046265665212#
+Nutriflex Omega special;Infusionsvätska, emulsion#7046260576612, 7046261782715, 7046261220118, 7046261719872#
+Valsartan Jubilant;Filmdragerad tablett#7046263990347#
+Proscar;Filmdragerad tablett#7046260204638#
+Taxotere;Koncentrat och vätska till infusionsvätska, lösning#7046260066625, 7046264460474, 7046261640503#
+Avamys;Nässpray, suspension#7046260882614, 7350004585533, 7046260647343#
+Precosa;Kapsel, hård#7046260001664, 7046260001824#
+Infanrix;Injektionsvätska, suspension#7046260976429, 7046260982284#
+Picato;Gel#7046265166306, 7046265798378, 7046264668528, 7046265623151, 7046265677314, 7350004590056, 7046265272557#
+Maxalt Rapitab;Frystorkad tablett#7046263975962, 7046263982229, 7046265394525#
+ELOCTA;Pulver och vätska till injektionsvätska, lösning#7350031440942#
+Movicol Junior;Pulver till oral lösning i dospåse#7046260824607#
+Granpidam;Filmdragerad tablett#5055565731895#
+Diovan Comp;Filmdragerad tablett#7046260225329, 7046260227088#
+Diflucan;Kapsel, hård#7046260003606, 7046260005648, 7046260031746#
+Spiriva;Inhalationspulver, hård kapsel#7046265481058#
+Midazolam Panpharma;Injektionsvätska, lösning#7046260580787#
+Symbicort forte Turbuhaler;Inhalationspulver#7046260219038, 7046260363472#
+Gentamicin Ebb;Injektionsvätska, lösning#7046260657045#
+Capsina;Kräm#7046260019621#
+Donepezil Actavis;Filmdragerad tablett#7046260873322, 7046260272705, 7046260272811#
+Innovair;Inhalationsspray, lösning#7046261985581#
+Entyvio;Pulver till koncentrat till infusionsvätska, lösning#7046264319789#
+Valsartan/Hydrochlorothiazide Krka;Filmdragerad tablett#7046264628492, 7046265589808#
+Atacand;Tablett#7046260464421, 7046260464513#
+Karvedilol Scand Pharm;Filmdragerad tablett#7046260183346#
+Topimax;Filmdragerad tablett#7046260083073, 7046260184367#
+Dalacin;Kapsel, hård#7046261958424, 7046264561522#
+Myfortic;Enterotablett#7046260706330, 7046260706248#
+Klorokinfosfat Recip;Filmdragerad tablett#7046261326131, 7046264106396#
+Tegretol Retard;Depottablett#7046264116548#
+Betoptic S;Ögondroppar, suspension#7046260005662, 7046260006492#
+Valtrex;Filmdragerad tablett#7046261045391, 7046261045476, 7046260782150, 7046261045889, 7046261045704#
+Tegretol Retard;Depottablett#7046260116511#
+Cipralex;Munsönderfallande tablett#7046265197072, 7046260363489#
+Mirtazapin Alternova;Filmdragerad tablett#7046260203129, 7046260203280#
+Tarceva;Filmdragerad tablett#7613326001908, 7046265509165, 7046263900001, 7046260387263, 7046261732079, 7046265664321#
+Pentasa;Depottablett#5702920211966, 5702920345128, 5702924639193, 7046260934504#
+Zalasta;Tablett#7046264424070#
+Symbicort forte Turbuhaler;Inhalationspulver#7350004582297, 7350004582303#
+Symbicort Turbuhaler;Inhalationspulver#7046260595781#
+Depo-Medrol cum lidocain;Injektionsvätska, suspension#7046260201224, 7046260201682, 7046260201453, 7046265825661#
+Zomig;Filmdragerad tablett#7046260324879#
+Brevibloc;Infusionsvätska, lösning#7046260979611#
+Bisoprolol Sandoz;Filmdragerad tablett#7046265265290#
+Eprex;Injektionsvätska, lösning, förfylld spruta#7046260128484, 7046260128590#
+Diovan Comp;Filmdragerad tablett#7046260346710, 7046260346802#
+Dalacin;Kutan lösning#7046264508824, 7046260906013#
+Bactrim;Oral lösning#7046261245111#
+Levemir (FlexPen);Injektionsvätska, lösning i förfylld injektionspenna#7046260197589, 7046260250178, 7046264071618, 7350004585281, 7046260928510, 7046261766197#
+Mesasal;Rektalskum#7046265150800, 7046265312109, 7046265312369#
+Seebri Breezhaler;Inhalationspulver, hård kapsel#7046264263181, 7046264535561, 7046260387089#
+Quetiapin Ebb;Depottablett#7046264241530, 7046264980354#
+Neurontin;Filmdragerad tablett#7046260138414, 7046260243026#
+Meropenem Sandoz;Pulver till injektions-/infusionsvätska, lösning#7046260964549#
+Dormicum;Injektionsvätska, lösning#7046260817456, 7046264113899, 7046265463092#
+Neurontin;Filmdragerad tablett#7350004584369, 7350004584352#
+Meropenem FarmaPlus;Pulver till injektions-/infusionsvätska, lösning#7046260874572#
+Venofer;Injektionsvätska/koncentrat till infusionsvätska, lösning#7046260363588#
+Synacthen;Injektions-/infusionsvätska, lösning#7046265781899#
+Neurontin;Kapsel, hård#7046260013810, 7046260015142#
+Inderal Retard;Depotkapsel, hård#7046260015739, 7046260017948#
+Mycophenolate mofetil Sandoz;Kapsel, hård#7046260900189#
+Symbicort Turbuhaler;Inhalationspulver#7046260095861, 7046260096363#
+Otezla;Filmdragerad tablett#7046261817134, 7046265846703#
+Entocort;Depotkapsel, hård#7046260005914#
+Zalasta;Tablett#7046261149631#
+Arimidex;Filmdragerad tablett#7046264039649, 7046264039724#
+VISTABEL;Pulver till injektionsvätska, lösning#7046260168947, 4024787430177#
+Lamictal;Tablett#7046261197496#
+Atrovent;Lösning för nebulisator i endosbehållare#7046265200314, 7046261298179#
+Ondansetron Bluefish;Munsönderfallande tablett#7311925615921#
+Paracetamol Apofri;Oral lösning#7046261652643#
+Clarithromycin HEC;Filmdragerad tablett#7046265501541, 7046264415467, 7046261571890, 7046263787220#
+Sastravi;Filmdragerad tablett#7046261104678, 7046265897552#
+Logimat forte;Depottablett#7046261517355#
+Intuniv;Depottablett#5022690009243#
+Prograf;Kapsel, hård#7046260183223#
+Retacrit;Injektionsvätska, lösning, förfylld spruta#7046261279208, 7046264170731, 7046260591493, 7046264200728, 7046265025214#
+Tegretol Retard;Depottablett#7046261804486#
+Prilect;Filmdragerad tablett#7046261874779, 7046263820385#
+Seretide Diskus;Inhalationspulver, avdelad dos#7046265925330, 7046265262961#
+Symbicort forte Turbuhaler;Inhalationspulver#7046260219038#
+Methotrexate Paranova;Koncentrat till infusionsvätska, lösning#7046261539074#
+Risperdal Consta;Pulver och vätska till injektionsvätska, depotsuspension#7046260237636#
+Pulmicort Turbuhaler;Inhalationspulver#7046263827629#
+Ritalina;Kapsel med modifierad frisättning, hård#7046261397384#
+Bactrim forte;Tablett#7322833253655#
+Nicorette;Medicinskt tuggummi#7046260155190, 7046260155084, 7046260154971#
+Glucobay;Tablett#7046260301719#
+Keflex;Granulat till oral suspension#7046260210721#
+Pravachol;Tablett#7046260878822#
+Rapamune;Dragerad tablett#7046260033535, 7046260033344, 7046260835245, 7046265682363, 7046260631786, 7046261090650#
+Pulmicort Turbuhaler;Inhalationspulver#7046260007611#
+Paclitaxel Hospira;Koncentrat till infusionsvätska, lösning#7046261377751, 7046261377874, 7046261377539, 7046261377980#
+Lipitor;Filmdragerad tablett#7046260216204, 7046260216952#
+C-vitamin;Tablett#7046261305679#
+Pioglitazone Teva Pharma;Tablett#7046261069328#
+Adcirca;Filmdragerad tablett#7046260857704#
+Laktulos MIP;Oral lösning#7046260403192, 7046260402973, 7046260403086#
+Effortil;Tablett#7322833248637#
+Pulmicort Turbuhaler;Inhalationspulver#7046260210066#
+Omeprazol Aurobindo;Enterokapsel, hård#7046264760673#
+Diovan Comp;Filmdragerad tablett#7046260324695#
+Menopur;Pulver och vätska till injektionsvätska, lösning#7046261862257#
+Levodopa/Benserazid Ebb;Tablett#7046261873086, 7046261215381#
+Prograf;Kapsel, hård#7046261075503#
+Neurontin;Filmdragerad tablett#7350004587124, 7350004587117#
+Aranesp;Injektionsvätska, lösning, förfylld spruta#7046260102033, 7046260573413, 7046264216538, 7046264437469#
+Mimpara;Filmdragerad tablett#7046264538913, 7046260533073, 7350004584659, 7046260378582, 7046260421004, 7046265976691, 7046261995191, 7046261641142#
+Aricept;Filmdragerad tablett#7046260006300#
+Latuda;Filmdragerad tablett#5060475950076#
+Prograf;Kapsel, hård#7350004583973#
+Abstral;Resoriblett, sublingual#7046261563451#
+Versatis;Medicinskt plåster#7046260459502#
+Naramig;Filmdragerad tablett#7046261473637, 7046264899632, 7046264928431#
+Malastad;Filmdragerad tablett#7046263731841#
+Lipoplus;Infusionsvätska, emulsion#7046260172838, 7046260207257#
+Dizminelle;Filmdragerad tablett#7046264556818#
+Betoptic S;Ögondroppar, suspension#7046263810201, 7046264234341#
+Javlor;Koncentrat till infusionsvätska, lösning#7046260261013, 7046260261143#
+Vancomycin Hospira;Pulver till infusionsvätska, lösning#7046261379922, 7046261131285#
+Perfalgan;Infusionsvätska, lösning#7046260549937#
+ADARTREL;Filmdragerad tablett#7046260210684#
+Ramipril STADA;Tablett#7046260775701#
+Valtrex;Filmdragerad tablett#7046261045391, 7046261045476, 7046261045704, 7046261045889#
+Galantamin Actavis;Depotkapsel, hård#7046261033077#
+Atorvastatin Pfizer;Filmdragerad tablett#7046265229599, 7046261133142#
+Pregabalin Accord;Kapsel, hård#5055565722244#
+Oncaspar;Injektions-/infusionsvätska, lösning#0642621061130#
+Stomacid;Brustablett#7046260730977, 7046260439061, 7046264302149#
+Vagifem;Vaginaltablett#7046265855880#
+Tranon;Filmdragerad tablett#7046260102194, 7046260407237#
+Crestor;Filmdragerad tablett#7046260170582#
+Ciklosporin Ebb;Kapsel, mjuk#7046260821033, 7046264597330#
+Thymoglobuline;Pulver till infusionsvätska, lösning#7046264351079, 7046260446038#
+Nexium;Enterotablett#7046261109055, 7046261108782, 7046261108874, 7046261108966#
+Ganfort;Ögondroppar, lösning#4024787430627, 5016007201932, 7046260314665, 7350004583010, 7350004583003, 7046260523548, 7046260871618, 7046265521518, 7046260427433, 7046260790841, 7046265785477#
+Lantus (SoloStar);Injektionsvätska, lösning i förfylld injektionspenna#7046260786233, 7350004582945, 7046265397021, 7046261768139, 7046261768474, 7046260682672, 7046263995144, 7046263704272#
+Migard;Filmdragerad tablett#7046260198081#
+Prednisolon Pfizer;Tablett#0000020795580, 0000020795665, 7046264233191#
+Locoid Crelo;Kutan emulsion#7046260251427, 7046260251748#
+Karvedilol Mylan;Filmdragerad tablett#7046260183759, 7046260183780#
+Adalat Oros;Depottablett#7046261180832#
+NovoMix 30 Penfill;Injektionsvätska, suspension, cylinderampull#7046260014909#
+Sildenafil Actavis;Filmdragerad tablett#7046265724278, 7046261207348, 7046260434875#
+Riluzol Actavis;Filmdragerad tablett#7046265119548#
+Risperdal;Oral lösning#7046260084735, 7046260086449#
+Efedrin Mylan;Injektionsvätska, lösning#7046261311366#
+Vagifem;Vaginaltablett#7350004582266#
+Pamidronatdinatrium Hospira;Koncentrat till infusionsvätska, lösning#7046261378314#
+Galantamin Actavis;Depotkapsel, hård#7046265636045, 7046261311724#
+Microlax;Rektallösning#3574661085395, 3574661087528, 3574661085364, 7046264107041#
+Metoject;Injektionsvätska, lösning, förfylld spruta#0373530114584, 0373530117585, 0373530118117, 0373530118445, 0373530120660, 0373530121322, 0373530121391, 0373530121605, 0373530629781#
+Orlistat STADA;Kapsel, hård#7046265453222#
+MicardisPlus;Tablett#7313270058729, 7046260058941#
+Risperdal;Filmdragerad tablett#7046260445031#
+Persantin;Dragerad tablett#7046260125841#
+Tegretol;Suppositorium#7046260576711#
+Glivec;Filmdragerad tablett#7612797302187, 7350004582822, 7046264555651, 7046260414761, 7046265449348, 7046265728610, 7046260289468, 7046261579681#
+Zoladex;Implantat i förfylld spruta#7046260959965#
+Foradil;Inhalationspulver#7046260222021, 7046265817444#
+Sandimmun Neoral;Kapsel, mjuk#7046260502246#
+Lamotrigin ratiopharm;Tablett#7046260655362, 7046260233812, 7046260231238#
+Valsartan Teva;Filmdragerad tablett#7046265967491, 7046264313138#
+Giona Easyhaler;Inhalationspulver#7046260944299, 7046260150850, 7046260944183#
+Pulmicort Turbuhaler;Inhalationspulver#7350004580804#
+Ketek;Filmdragerad tablett#7046260044517, 7350004581887#
+Piperacillin/Tazobactam Stragen;Pulver till infusionsvätska, lösning#7046260586581#
+Selukos;Kutan suspension#7046260035416#
+Inlyta;Filmdragerad tablett#7046261477949, 7046265995029#
+Glukosamin Copyfarm;Filmdragerad tablett#7046260256385, 7046260256163, 7046260256446#
+Tegretol;Tablett#7046260576070, 7046261578745#
+Ritalin;Tablett#7046260195271, 7046260195370, 7046265005957#
+Metojectpen;Injektionsvätska, lösning i förfylld injektionspenna#7046264476017, 7046261031141#
+Differin;Kräm#7350004589777#
+Irbesartan/Hydrochlorothiazide Teva;Filmdragerad tablett#7046260295452#
+Symbicort Turbuhaler;Inhalationspulver#7046260086975, 7046260099951#
+Zoton;Munsönderfallande tablett#7046261060400, 7046260805606#
+VeroPol;Injektionsvätska, lösning, förfylld spruta#7046260801226, 7046261255387#
+Losartan/Hydrochlorothiazide Bluefish;Filmdragerad tablett#7311920962273, 7311920962167#
+Gabapentin Sandoz;Filmdragerad tablett#7046264140338#
+Pramipexole Teva;Tablett#7046260332683#
+Zarator;Filmdragerad tablett#7046260051539, 7046260050532#
+EMLA;Medicinskt plåster#7046264547779, 7046264945919#
+Sevofluran Baxter;Inhalationsånga, vätska#7046360334226, 7046260236080#
+Ifenin;Filmdragerad tablett#7046265147855#
+Combivent;Lösning för nebulisator#7046265206811#
+Hermolepsin Retard;Depottablett#7046264394489#
+Daylette;Filmdragerad tablett#7046260449701#
+Heminevrin;Kapsel, mjuk#7046261018326, 7046261815031#
+Vagifem;Vaginaltablett#7046263823331#
+Campral;Enterotablett#7350004586127, 7350004586110#
+Risperdal;Filmdragerad tablett#7046260951259#
+Metoprolol GEA Retard;Depottablett#7046260073500#
+Lamictal;Tuggtablett/dispergerbar tablett#7046261947206, 7046260285750#
+Valsartore;Filmdragerad tablett#7046261167925#
+Memantine Mylan;Filmdragerad tablett#7046265884576, 7046260925540#
+Menopur;Pulver och vätska till injektionsvätska, lösning#7046261289849#
+Estradot;Depotplåster#7046260178748#
+Linatil comp mite;Tablett#7046260217973#
+Metformin Sandoz;Filmdragerad tablett#7322833293347#
+Nozinan;Tablett#0000020466985#
+Rimactan;Dragerad tablett#7046265918912#
+Mirtazapin Orion;Munsönderfallande tablett#7046260248496, 7046260248601#
+Sertralin ratiopharm;Filmdragerad tablett#7046260218000, 7046260217676, 7046260217898#
+Lisinopril/Hydrochlorthiazid Sandoz;Tablett#7046260191266, 7046260185708#
+Lamotrigin Mylan;Tablett#7046260253421, 7046260255272#
+Carboplatin Actavis;Koncentrat till infusionsvätska, lösning#7046260858305, 7046264294864, 7046264435007, 7046261917896#
+VELCADE;Pulver till injektionsvätska, lösning#7046260171954, 7046265313656, 7046260495142, 7046265159353, 7046265040743#
+Normosang;Koncentrat till infusionsvätska, lösning#7046261011051#
+Loceryl;Medicinskt nagellack#7046260118652#
+Ezetrol;Tablett#7046260490666#
+Terazosin STADA;Tablett#7046260610064#
+Flutide Evohaler;Inhalationsspray, suspension#7350004587575#
+Tradolan Retard;Depottablett#7046260072640, 7046260072985, 7046260180277#
+Risperidon STADA;Filmdragerad tablett#7046261133036#
+Ramipril Actavis;Tablett#7046260223356, 7046260215023#
+Vagifem;Vaginaltablett#7046261897877#
+Signifor;Pulver och vätska till injektionsvätska, suspension#7612797282021#
+Seretide Diskus forte;Inhalationspulver, avdelad dos#7046260393875, 7046260393783#
+Prograf;Kapsel, hård#7046261184519#
+Bikalutamid Actavis;Filmdragerad tablett#7046261640626#
+Avodart;Kapsel, mjuk#7046260441699, 7046260441781#
+Vi-Siblin S;Granulat#7046260351875, 7046260351974#
+Aurorix;Tablett#7046260015555, 7046260016002#
+Timosan;Depotögondroppar, lösning i endosbehållare#7046260235250, 7046260235762#
+Preflucel;Injektionsvätska, suspension, förfylld spruta#7046260342835#
+Norspan;Depotplåster#7350065340362, 7350065340355#
+Clopidogrel ratiopharm;Filmdragerad tablett#7046260586949, 7046260586826#
+Atrovent;Lösning för nebulisator i endosbehållare#7046265200727#
+Fexim;Brustablett#7046261468305, 7046261468411#
+Vesicare;Filmdragerad tablett#7046265272526#
+Requip Depot;Depottablett#7046260650282#
+Narop;Injektionsvätska, lösning#7046261561662, 7046261572224#
+Halcion;Tablett#7046260437296#
+Crestor;Filmdragerad tablett#7350004583607, 7350004583591#
+Kandrozid;Tablett#7046261586658, 7046263801759#
+Plendil;Depottablett#7046260387782#
+Metformin Actavis;Filmdragerad tablett#7046264490822, 7046260842335, 7046670218973, 7046670219918#
+Opnol;Ögondroppar, lösning i endosbehållare#7315980917365#
+Losartan/Hydrochlorothiazide Sandoz;Filmdragerad tablett#7046260500495, 7046260500617#
+Eporatio;Injektionsvätska, lösning, förfylld spruta#7046260786332, 7046260785441, 7046264166659#
+Pneumo 23;Injektionsvätska, lösning#7046264537954#
+Dalacin;Kapsel, hård#7046260056961, 7046260057074, 7046261539500#
+Palexia Depot;Depottablett#7046260943841, 7046260943728#
+Sildenafil Accord;Filmdragerad tablett#5055565706862, 5055565706855#
+Adalat Oros;Depottablett#7046261180832#
+Paracetamol Panpharma;Infusionsvätska, lösning#7046260978614, 7046261204064#
+Brufen;Filmdragerad tablett#7046261236874#
+Zantac;Tablett#7046260375499, 7046264376577, 7046265336464, 7046265918424#
+Gemcitabin Actavis;Pulver till infusionsvätska, lösning#7046260748842, 7046260768253, 7046260768376#
+Importal Ex-Lax;Oralt pulver i dospåse#7313270002951, 7046260003187, 7046260003293#
+Immunate;Pulver och vätska till injektionsvätska, lösning#7046261011884#
+Neurontin;Filmdragerad tablett#7046260519138#
+Pulmicort Turbuhaler;Inhalationspulver#7046260007611#
+Enalapril Comp STADA;Tablett#7046260189218, 7046260200371#
+Paclitaxel Accord;Koncentrat till infusionsvätska, lösning#5055565712283, 5055565712306, 5055565712276, 5055565712290#
+Sandimmun Neoral;Kapsel, mjuk#7046260170575#
+Sinalfa;Tablett#5060064170946, 5060064170953#
+Hycamtin;Pulver till koncentrat till infusionsvätska, lösning#7046264548509, 7046260309517, 7046264375099, 7046260309425, 7046261282369#
+Nicorette Fruktmint;Medicinskt tuggummi#7046260327511, 7046260327429, 7046260327337#
+Selokeen;Injektionsvätska, lösning#7046264168226#
+Apomorfin PharmSwed;Infusionsvätska, lösning#7046260391475#
+EpiPen;Injektionsvätska, lösning i förfylld injektionspenna#7046260394346#
+Cefadroxil Mylan;Filmdragerad tablett#7046264813904, 7046264814246, 7046264814321, 7046264861677#
+Crestor;Filmdragerad tablett#7046260164352#
+HyperHAES;Infusionsvätska, lösning#7046260098282, 7046260219502#
+Flexilev;Dispergerbara tabletter för dosdispenser#7350071010013#
+Remodulin;Infusionsvätska, lösning#7046263750057#
+Venofundin;Infusionsvätska, lösning#7046260174177#
+Oxycodone Depot Orion;Depottablett#7046260657168, 7046265327127#
+NiQuitin;Depotplåster#7046265821892#
+Lamictal;Tuggtablett/dispergerbar tablett#7046261450614, 7046260977563#
+Donepezil Teva;Filmdragerad tablett#7046261781954, 7046261108942#
+Citalopram BMM Pharma;Filmdragerad tablett#7046261260503, 7046261260398#
+Saroten;Filmdragerad tablett#7046261620994#
+Infanrix-Polio+Hib;Pulver och vätska till injektionsvätska, suspension#7046260596597#
+Celluvisc;Ögondroppar, lösning i endosbehållare#4024787110369, 5016007455410#
+Prograft;Kapsel, hård#7046261151061#
+Olanzapine Glenmark;Tablett#7046260872011#
+Flixonase Nasal;Näsdroppar, suspension#7046261469487#
+Anapen Junior;Injektionsvätska, lösning, förfylld spruta#7046260109094#
+Ciqorin;Kapsel, mjuk#7046265604303#
+Risperidon ratiopharm;Filmdragerad tablett#7046260933613, 7046260933705, 7046261675208#
+Genotropin Mini Quick;Pulver och vätska till injektionsvätska, lösning#7046260177338#
+Aricept;Filmdragerad tablett#7046260056336, 7046260056442#
+Isoptin Retard;Depottablett#7046263905143#
+Serevent Diskus;Inhalationspulver, avdelad dos#7046264247532#
+Kyprolis;Pulver till infusionsvätska, lösning#7046265344018#
+Removab;Koncentrat till infusionsvätska, lösning#4260054620135#
+Combivent;Lösning för nebulisator#7046263957234#
+Sincon;Ögondroppar, lösning i endosbehållare#7315985604666#
+Efexor;Tablett#7046260056107#
+Olanzapin STADA;Munsönderfallande tablett#7046264533369#
+Xalcom;Ögondroppar, lösning#7350004581054, 7350004581047#
+Klorhexidin Fresenius Kabi;Spolvätska för urinblåsan#7046261766777, 7046265494362#
+Fucidine;Salva#7046260442177, 7046263863580#
+Sabrilex;Filmdragerad tablett#7046260023697#
+Lemtrada;Koncentrat till infusionsvätska, lösning#7046261650700#
+Mycophenolate mofetil Arrow;Filmdragerad tablett#7046260314481, 7046261170830, 7046263702308#
+Minirinmelt;Frystorkad tablett#7046260976788, 7046260976696#
+Citanest;Injektionsvätska, lösning#7046261915694#
+GONAL-f;Injektionsvätska, lösning i förfylld injektionspenna#7046260168923, 7046261151511, 7046260902053, 7046261654166, 7046260328013, 7350004586615, 7046265466192#
+Tareg Comp;Filmdragerad tablett#7046260504318#
+Voltaren;Suppositorium#7046261183154, 7046261183239#
+Demoson;Salva#7046260763043, 7046260763272#
+Esmeron;Injektionsvätska, lösning#7350004588701#
+Isopto-Maxidex;Ögondroppar, suspension#7046264643242#
+Prograf;Kapsel, hård#7046264339343#
+Seretide Diskus mite;Inhalationspulver, avdelad dos#7046263784342, 7046261737920#
+Cincain;Ögonsalva#7046264852194#
+Ondansetron Aurobindo;Filmdragerad tablett#7046261472432, 7046261458726#
+Lepheton;Oral lösning#7046260055919, 0000020368975, 7046260369054#
+Invicorp;Injektionsvätska, lösning#7046260847538#
+Cefonova;Pulver till injektionsvätska, lösning#7046260342705#
+Visacor;Filmdragerad tablett#7046260280212#
+Cubicin;Pulver till injektions-/infusionsvätska, lösning#0366582504559#
+Vesicare;Filmdragerad tablett#7046265057260, 7046260995734#
+Nefoxef;Filmdragerad tablett#7046260513402, 7046260513310#
+Emla;Kräm#7046260977518#
+Flutamid STADA;Tablett#7046265100652#
+Intrinsa;Depotplåster#7046261613859#
+Ipren;Filmdragerad tablett#7046260797802, 7046260885349, 7046260885424, 3574661211145#
+Undestor Testocaps;Kapsel, mjuk#0366582503194#
+Arcoxia;Filmdragerad tablett#7046260630871#
+Montelukast STADA;Filmdragerad tablett#7046260390287, 7046264859964#
+Pravastatin Ranbaxy;Tablett#8901296007716, 8901296007686#
+Wellbutrin;Tablett med modifierad frisättning#7046260900738, 7046261257916#
+Tolterodin Ebb;Filmdragerad tablett#7046260553545, 7046261935678#
+Venlafaxin Sandoz;Depotkapsel, hård#7046260267398, 7046260267282#
+Alendronat ratiopharm Veckotablett;Tablett#7046260249936, 7046260247802#
+Tredaptive;Tablett med modifierad frisättning#7046261505611, 7046261505390, 7046261505505, 7046261505727, 7046260281776#
+diTeBooster;Injektionsvätska, suspension#7046260047440#
+Rocaltrol;Kapsel, mjuk#7046260285330#
+Odefsey;Filmdragerad tablett#7046260672291#
+Ondansetron Mylan;Filmdragerad tablett#7046260620971, 7046260621060, 7046260671706#
+Duraphat;Dentalsuspension#7046260715899, 7046261293877, 7046264168592, 7046264168677, 7046260622500#
+Topimax;Filmdragerad tablett#7046265517009#
+Arimidex;Filmdragerad tablett#7046260042858, 7046260043763#
+Somatuline Autogel;Injektionsvätska, lösning, förfylld spruta#7046261175173#
+Esopral;Enterotablett#7046261042970, 7046261043069, 7046261043168, 7046261042888, 7046261043250#
+Pinex Jordgubb;Granulat i dospåse#7046264563533#
+Sandostatin;Injektionsvätska, lösning#7046260041738#
+Doxazosin 2care4;Depottablett#7046264033494#
+Atenolol Mylan;Tablett#7046264413869, 7046264496114, 7046264527221#
+Sastravi;Filmdragerad tablett#7046264600733, 7046265196679#
+Pramipexole Sandoz;Depottablett#7046263951850#
+Vi-Siblin S;Granulat i dospåse#7046260017269, 7046260351783, 7046260351691#
+Depo-Medrol;Injektionsvätska, suspension#7046260020702, 7046260021099, 7046260021075#
+Risperdal;Filmdragerad tablett#7350004580644#
+Dettolmed;Kutan spray, lösning#7046260694316#
+Alendronat Sandoz Veckotablett;Filmdragerad tablett#7046261431415, 7046261431309#
+Finasterid Orion;Filmdragerad tablett#7046260314870, 7046260314788#
+Bioclavid;Filmdragerad tablett#7046260116535, 7313274747261, 7046261673747#
+Edronax;Tablett#7046264091104, 7046264096802, 7046264098707, 7046265158660#
+Nuwiq;Pulver och vätska till injektionsvätska, lösning#7046261579384#
+Ketogan Novum;Injektionsvätska, lösning#7046264990797#
+ZYPADHERA;Pulver och vätska till injektionsvätska, suspension#7046260279766, 7046261550161, 7350004589685, 7046265925637, 7046264458594#
+Lamotrigin EQL;Tablett#7046261951920#
+Metadon Nordic Drugs;Oral lösning#7319900972960, 7319905240002#
+Ergenyl Retard;Depotgranulat i dospåse#7046260207561, 7046260207677, 7046260826038#
+Lamotrigin 2care4;Dispergerbar tablett#7046261298155#
+Simvastatin Krka;Filmdragerad tablett#7046260902602, 7046260236745, 7046260236851#
+Omestad;Enterokapsel, hård#7046264691755#
+Alprazolam Krka;Depottablett#7046260874916, 7046260875036#
+Amilorid Mylan;Tablett#7046260230774, 7046264436899, 7046264476239#
+Colobreathe;Inhalationspulver, hård kapsel#5014398003487, 7046263762326, 7046260888067#
+Niaspan;Depottablett#7046260188587, 7046260188471#
+Innohep;Injektionsvätska, lösning, förfylld spruta#7046260968080, 7046260968301, 7046260968196#
+Galantamin Sandoz;Depotkapsel, hård#7046265777861#
+Olanzapin Orion;Munsönderfallande tablett#7046264795910#
+Procren Depot;Pulver och vätska till injektionsvätska, suspension#7046264548011#
+Seretide Diskus forte;Inhalationspulver, avdelad dos#7046260393875, 7046260393783#
+Spiriva Respimat;Inhalationsvätska, lösning#7350004586219#
+Xalcom;Ögondroppar, lösning#7046261012782#
+Risperidon Actavis;Filmdragerad tablett#7046261008877, 7046261616416#
+Rivastigmine Sandoz;Kapsel, hård#7046265121718#
+Duloxetin Actavis;Enterokapsel, hård#7046260672406#
+Sandimmun Neoral;Kapsel, mjuk#7046260392144#
+Pro-Epanutin;Koncentrat till injektions-/infusionsvätska, lösning#7046265297352#
+Zydelig;Filmdragerad tablett#7046265443742#
+M-M-RVAXPRO;Pulver och vätska till injektionsvätska, suspension i förfylld spruta#7046260890770#
+Olanzapin Actavis;Munsönderfallande tablett#7046264261866#
+Rilast forte Turbuhaler;Inhalationspulver#7046261019781, 7046261019699#
+Mozoc;Depottablett#7046260042901, 7046260042575, 7046260042681, 7046260042797, 7046261342179#
+Certican;Tablett#7046260148598#
+Seroplex;Filmdragerad tablett#7046260671881#
+Loramyc;Buckaltablett, häftande#7046261305525#
+Paraflex;Tablett#7322833210672#
+Glucobay;Tablett#7046264170052#
+Gemadol;Depotkapsel, hård#7046260006393, 7046260006560#
+Alphagan;Ögondroppar, lösning#7046260931510, 7046260931602#
+Humulin Regular;Injektionsvätska, lösning#7046263742809, 7046264010594#
+Prednisolon Alternova;Tablett#7046261711302, 7046265413066#
+Artzal;Injektionsvätska, lösning#7046260124080, 7046260124301, 7046260163508, 7046260189393, 7046260189614, 7046260189508#
+Rispolept Consta;Pulver och vätska till injektionsvätska, depotsuspension#7046263718651#
+Madopark Depot;Depotkapsel, hård#7046260550209#
+Lamictal;Tuggtablett/dispergerbar tablett#7350004583638#
+Metformin Bluefish;Filmdragerad tablett#7311921628529#
+Sporanox;Oral lösning#7046261488822#
+Becotide;Inhalationspulver, avdelad dos#7046264584309, 7046264584552#
+Myambutol;Tablett#7046261727914#
+Xeloda;Filmdragerad tablett#7046263977522, 7046263913162, 7350004585526, 7046265962335, 7046264280775#
+Lamictal;Tablett#7046261307611, 7046260528420#
+Betoptic S;Ögondroppar, suspension i endosbehållare#7046260612754#
+Dalacin;Kapsel, hård#7046264509999, 7046260239500#
+Atorvastatin Orifarm;Filmdragerad tablett#7046261647670#
+Crinone;Vaginalgel#7046260005464, 7046260006133#
+Sildenafil Teva;Filmdragerad tablett#7046264066843, 7046263762586#
+Lamotrigin Actavis;Tablett#7046260971332, 7046260242159, 7046260230644, 7046260249318, 7046261000857#
+Lamictal;Dispergerbar tablett/tuggtablett#7046260180390#
+Imigran;Nässpray, lösning#7046261515443, 7046265856962#
+Desloratadine Sandoz;Filmdragerad tablett#7046260644632, 7046260839939, 7046261541343, 7046264399620, 7046264007143#
+Pantoprazol Ranbaxy;Enterotablett#7046264970041, 8901296018385#
+Dentan;Munsköljvätska#7046260301306#
+Seroquel Depot;Depottablett#7046265212256, 7046261597401#
+Lomir SRO;Depotkapsel, hård#7046260781375#
+Tanlozid;Filmdragerad tablett#7046261833493, 7046260734234#
+Euthyrox;Tablett#7046260084353#
+Paclitaxel Actavis;Koncentrat till infusionsvätska, lösning#7046260668881, 7046261564847, 7046260668799, 7046260668973#
+Spiriva Respimat;Inhalationsvätska, lösning#7046260644816#
+Fentanyl Lavipharm;Depotplåster#7311925801577, 7311921550318, 7311923955647#
+Simvastatin Ranbaxy;Filmdragerad tablett#8901296011867, 8901296011850#
+Maprotilin Mylan;Tablett#7046260965119#
+Sabrilex;Filmdragerad tablett#7046260023697#
+Sandimmun Neoral;Kapsel, mjuk#7046260067776#
+Pulmicort Turbuhaler;Inhalationspulver#7046265191162#
+Tacni;Kapsel, hård#7046261282697#
+Seroquel Depot;Depottablett#7046261390965#
+Blopresid Comp;Tablett#7046261230216#
+Candesartan/Hydrochlorothiazide STADA;Tablett#7046265756989#
+Fontex;Oral lösning#7046261656023#
+Madopar Depot;Depotkapsel, hård#7046264301371#
+Pursennid Ex-Lax;Dragerad tablett#7046260035638, 7046260035973, 7046261642026, 7046264004166, 7046260035638, 7046261642026#
+Metadon Nordic Drugs;Oral lösning#7319900971369, 7319900002582#
+Venlafaxin Arrow;Depotkapsel, hård#7046261479196#
+Torem;Tablett#7046260483309#
+Metadon Pharmadone;Oral lösning#0462607913296#
+Antabuse;Brustablett#7046260810174#
+Claforan;Pulver till injektionsvätska, lösning#7046260083196#
+Catapresan;Injektionsvätska, lösning#7046261488334#
+Divigel;Gel i endosbehållare#7046260659469, 7046260659537#
+Vabadin;Filmdragerad tablett#7046260563575#
+Viskén;Tablett#7046260700529, 7046261485937#
+Rilast forte Turbuhaler;Inhalationspulver#7350004582563, 7350004582556#
+Nezeril;Nässpray, lösning#7046265822134#
+Lamotrigin ratiopharm;Dispergerbar tablett#7046260983878, 7046260223189#
+Nicorette Pepparmint;Medicinskt tuggummi#7046260174467, 7046260174689, 7046260307056, 7046260174573#
+Norprolac;Tablett#7350004588626#
+Stesolid;Rektallösning#7046260747968#
+Amlodipin Aurobindo;Tablett#7046264236338#
+Indivina;Tablett#7046260223998#
+Olanzapin Ranbaxy;Tablett#8901296026595, 8901296025840#
+Questran Loc;Pulver till oral suspension, dospåse#7046264045923#
+Symbicort forte Turbuhaler;Inhalationspulver#7350004582297, 7350004582303#
+Heracillin;Filmdragerad tablett#7046260575370, 7046264896013, 7046265202493#
+Klacid;Tablett#7046260011311, 7046263772424, 7046263772592, 7046263973647#
+Pamidronat Meda;Koncentrat till infusionsvätska, lösning#7046260216631, 7046260216938, 7046260215979, 7046260216709#
+Sertralin ratiopharm;Filmdragerad tablett#7046260218987, 7046260219083, 7046260217782#
+Epivir;Filmdragerad tablett#7046261019507, 7046260862418#
+Lisinopril Arrow;Tablett#7046260149328#
+Irbesartan/Hydroklortiazid Actavis;Filmdragerad tablett#7046264269770#
+Loceryl;Medicinskt nagellack#7046261246699#
+Laxido Junior;Pulver till oral lösning#7319900002711#
+Taloxa;Tablett#7046260863798#
+Avaglim;Filmdragerad tablett#7046260623613, 7046260623163, 7046260623439, 7046261070508#
+Zyban;Depottablett#7046260330511#
+C-vitamin sockerfri apelsin;Brustablett#7046264656662, 7046264656747, 7046264656822#
+Anastrozol Actavis;Filmdragerad tablett#7046260837560#
+Enalapril Ranbaxy;Tablett#7046261162388#
+Imatinib Actavis Group;Filmdragerad tablett#7046265149910#
+Imatinib Fresenius Kabi;Filmdragerad tablett#4086000035156#
+Diklofenak Mylan;Enterotablett#7046261587259, 7046261607391, 7046263884479, 7046264243176, 7046260196490, 7313273241111#
+Alprazolam Sandoz;Tablett#7046260285408, 7046260285293#
+ZYPADHERA;Pulver och vätska till injektionsvätska, suspension#7046260279995, 7046264894170, 7350004589708, 7046264514382, 7046261124614, 7046265858669, 7046265205845, 7046261562591#
+Fluanxol;Dragerad tablett#7046261837729#
+Furosemid Recip;Injektionsvätska, lösning#7046261189194, 7046264119679, 0000024120234, 7046265119074, 7046265119159, 7046265119234#
+Seretide Diskus forte;Inhalationspulver, avdelad dos#7046260393875, 7046260393783#
+Aranesp;Injektionsvätska, lösning, förfylld spruta#7046260033184, 7046261108232, 7046260572171, 7350004587636, 7046260351097, 7046261969840, 7046264984284, 7046265448884#
+Diflucan;Pulver till oral suspension#7046264170878#
+Palonosetron Accord;Injektionsvätska, lösning#5055565728307#
