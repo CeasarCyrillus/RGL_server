@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="enhet-styrka">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="10">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">HEP</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="104">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">g/dos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="105">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">anti-Xa E/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="107">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milj. IU</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="11">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">g/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="112">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ppm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="12">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrog</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="134">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milj. IE/dos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="136">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikromol/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="137">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">anti-Xa/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="14">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg/24 timmar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="15">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg/g</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="150">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">U/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="152">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrol/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="155">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mmol/l Kalium</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="16">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="17">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg I/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="182">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">AMU/dos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="186">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">pH 7,4</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="19">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">SQ-E/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="198">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kBq</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">%</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="20">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">IU</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="21">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg Ca2+</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="210">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg/dm2</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="212">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="213">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">g/l</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="214">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">enheter/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="215">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">flockningsenheter/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="217">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">SQ-T</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="218">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">anti-Xa IE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="219">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kBq/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="22">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg Fe3+/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="23">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrog/24 timmar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="24">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">anti-Xa IE/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="25">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mmol/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="27">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg/16 timmar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="29">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrog/timme</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="3">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">IE/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="30">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg Fe2+</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="32">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">E/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="33">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrog/g</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="34">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mmol/l</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="35">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">IE/dos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="37">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">IU/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="38">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">% F</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="4">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">IE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="40">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">% jod</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="41">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">% v/v</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="46">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">E</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="47">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ELISA U/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="49">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">IU/g</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="5">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrog/dos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="50">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">KIE/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="53">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mol/l</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="56">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="58">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milj. IE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="59">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milj. IE/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="6">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg/dos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="64">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="66">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg Ca/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="69">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg Fe2+/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="7">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrog/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="70">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg Fe/ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="73">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg Zn2+</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="77">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg/72 timmar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="78">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mg/cm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="83">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">g</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

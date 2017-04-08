@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace='urn:schemas-asab:lexikon' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:lex='urn:schemas-asab:lexikon'>
+  <xs:simpleType name='produkt-id-typ'>
+    <xs:restriction base='xs:string'>
+      <xs:enumeration value='eumano'>
+        <xs:annotation>
+          <xs:documentation xml:lang='sv'>EU Godkännandenr</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

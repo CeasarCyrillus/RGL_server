@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="bestandsdel-tillaggsenhet">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ADPH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ingrediensen tillsätts i erforderlig mängd för att justera pH</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ADVOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ingrediensen tillsätts i erforderlig mängd för att uppnå rätt slutvolym</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ALTCA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ingrediensen är en av två (flera) alternativa ingredienser, varav en ingår. Mängden är uttryckligen ungefärlig.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ALTEQ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ingrediensen är en av två (flera) alternativa ingredienser, varav en ingår.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Angiven mängd är uttryckligen ungefärlig</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EQ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Angiven mängd är den avsedda, med normal variation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NLT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Innehåller ej mindre än angiven mängd.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NMT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Innehåller ej mer än angiven mängd.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OPTCA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ingrediensen kan ingå, men behöver inte. Angiven mängd är ungefärlig.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OPTEQ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ingrediensen kan ingå, men behöver inte.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="QS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Quantum satis. Ingrediensen tillsätts i behövlig mängd.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SPAR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spår</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TOWGHT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ingrediensen tillsätts i erforderlig mängd för att uppnå avsedd vikt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

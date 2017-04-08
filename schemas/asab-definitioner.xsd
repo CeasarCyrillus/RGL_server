@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="urn:schemas-asab:definitioner" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:def="urn:schemas-asab:definitioner" xmlns:lex="urn:schemas-asab:lexikon"
+  elementFormDefault="qualified" attributeFormDefault="unqualified" version="3.0">
+  <xs:import schemaLocation="asab-lexikon.xsd" namespace="urn:schemas-asab:lexikon" />
+
+  <xs:complexType name="produkt">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">
+        Beskriver grundstrukturen för en produkt, denna ärvs av lmprodukt och hvprodukt
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="produktnamn">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="100" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="tillagsnamn">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="produkt_namn" type="def:produkt_namn" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="intressenter">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="intressent_ref" type="def:intressent_ref" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="forsaljningsstopp" type="lex:yesno" />
+      <xs:element name="forsaljningsstopp_kommentar_vara" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="80" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="innehaller_laktos" type="lex:yesno" minOccurs="0" nillable="true" />
+      <xs:element name="innehaller_latex" type="lex:innehaller-latex" minOccurs="0" nillable="true" />
+      <xs:element name="gruppvarunummer" type="lex:yesno" />
+      <xs:element name="receptbelagd" type="lex:receptbelagd" />
+      <xs:element name="avregistreringsdatum" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+            <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="produkt_typ" type="lex:produkt-typ" />
+      <xs:element name="lakemedel" type="lex:yesno" />
+    </xs:sequence>
+    <xs:attribute name="version" type="xs:string" />
+  </xs:complexType>
+
+  <xs:element name="hvprodukt" type="def:hvprodukt" />
+
+  <xs:complexType name="hvprodukt">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">
+        Beskriver en handelsvaruprodukt, ärver grundstruktur från def:product
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="def:produkt">
+        <xs:sequence>
+          <xs:element name="produkt_benamning" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1" />
+                <xs:maxLength value="250" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="produkt_beskrivning" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1" />
+                <xs:maxLength value="250" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="handelsvarugrupp" type="lex:handelsvarugrupp" />
+          <xs:element name="artiklar">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:choice>
+                  <xs:element name="handelsvara" type="def:handelsvara" minOccurs="1" maxOccurs="unbounded" />
+                  <xs:element name="tjanst" type="def:tjanst" minOccurs="1" maxOccurs="unbounded" />
+                </xs:choice>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:element name="lmprodukt" type="def:lmprodukt" />
+
+  <xs:complexType name="lmprodukt">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">
+        Beskriver en läkemedelsprodukt, ärver grundstruktur från def:produkt
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="def:produkt">
+        <xs:sequence>
+          <xs:element name="nplid">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1" />
+                <xs:maxLength value="14" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="godkannandenr" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                  <xs:minLength value="1" />
+                  <xs:maxLength value="10" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="antidot" type="lex:yesno" />
+          <xs:element name="avvikelse_parallell_import" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1" />
+                <xs:maxLength value="500"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="ddd" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="8" />
+                <xs:fractionDigits value="3" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="dos_bryttillstand" type="lex:yesno" />
+          <xs:element name="dos_bryttillstand_hallbar" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="2" />
+                <xs:fractionDigits value="0" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="godkannande_datum" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:date">
+                <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="styrka_klartext" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1" />
+                <xs:maxLength value="200"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="marknadsfors" type="lex:yesno" />
+          <xs:element name="utbytbar" type="lex:yesno" />
+          <xs:element name="veterinarlakemedel" type="lex:yesno" />
+          <xs:element name="atc_kod" type="lex:atc-kod" minOccurs="0" nillable="true" />
+          <xs:element name="enhet_ddd" type="lex:enhet-ddd" minOccurs="0" nillable="true" />
+          <xs:element name="doseringsenhet" type="lex:doseringsenhet" />
+          <xs:element name="godkannande_procedur" type="lex:godkannande-procedur" minOccurs="0" nillable="true" />
+          <xs:element name="lakemedelsform" type="lex:lakemedelsform" />
+          <xs:element name="parallellimport_fran" type="lex:land-kod" minOccurs="0" nillable="true" />
+          <xs:element name="original_nplid" minOccurs="0" nillable="true">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1" />
+                <xs:maxLength value="14" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="europeiskt_godkannandenr" minOccurs="0" nillable="true">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="11" />
+                <xs:maxLength value="12" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="narkotika_klass" type="lex:narkotika-klass" />
+          <xs:element name="sarskilt_lakemedel" type="lex:yesno" />
+          <xs:element name="utokad_overvakning" type="lex:yesno" />
+          <xs:element name="rikslicens" type="lex:yesno" />
+          <xs:element name="utlamnandebegransning" type="lex:utlamnandebegransning" minOccurs="0" nillable="true" />
+          <xs:element name="iterering" type="lex:iterering" minOccurs="0" nillable="true" />
+          <xs:element name="enhet_styrka" type="lex:enhet-styrka" minOccurs="0" nillable="true" />
+          <xs:element name="styrka" minOccurs="0" nillable="true">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="12" />
+                <xs:fractionDigits value="3" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="utbytbarheter">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="utbytbarhet" type="def:utbytbarhet" minOccurs="0" maxOccurs="2" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="farmaceutiska_produkter">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="farmaceutisk_produkt" type="def:farmaceutisk_produkt" minOccurs="0" maxOccurs="unbounded" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="artiklar">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="lmartikel" type="def:lmartikel" minOccurs="1" maxOccurs="unbounded" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="artikel">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">
+        Beskriver grunstrukturen för en artikel, denna ärvs även av def:lmartikel
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="varunummer" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="6" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="streckkod" nillable="true" minOccurs="0">
+          <xs:simpleType>
+              <xs:restriction base="xs:string">
+                  <xs:minLength value="1" />
+                  <xs:maxLength value="14" />
+              </xs:restriction>
+          </xs:simpleType>
+      </xs:element>
+      <xs:element name="identitet">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="artikel_id" type="def:artikel_id" minOccurs="1" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="forskrivningsratt">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="artikel_forskrivningsratt" type="lex:forskrivningsratt" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="pris">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="pris_artikel" type="def:pris_artikel" minOccurs="0" maxOccurs="2" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="intressent_ref" type="def:intressent_ref" nillable="true" minOccurs="0" />
+      <xs:element name="forvaring">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="forvaringsfall" type="def:forvaringsfall" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="antal_klartext" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="50" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="antal_multipel_1" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="6" />
+            <xs:fractionDigits value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="antal_multipel_2" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="6" />
+            <xs:fractionDigits value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="antal_numeriskt" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="9" />
+            <xs:fractionDigits value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="artikel_benamning" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="80" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="beskrivning" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="100" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="forman" type="lex:yesno" />
+      <xs:element name="forpackning_text" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="255"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="forsaljningsstopp" type="lex:yesno" />
+      <xs:element name="forsaljningsstopp_kommentar_vara" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="80" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="forsaljnings_restriktion">
+          <xs:complexType>
+              <xs:sequence>
+                  <xs:element name="artikel_forsaljnings_restriktion" type="lex:forsaljnings-restriktion" minOccurs="0" maxOccurs="unbounded" />
+              </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+      <xs:element name="innehaller_latex" type="lex:yesno" minOccurs="0" nillable="true" />
+      <xs:element name="receptbelagd" type="lex:yesno" />
+      <xs:element name="avregistreringsdatum" nillable="true" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+            <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="antal_numerisk_enhet" type="lex:antal-numerisk-enhet" minOccurs="0" nillable="true" />
+      <xs:element name="forpacknings_typ_inre" type="lex:forpacknings-typ-inre" minOccurs="0" nillable="true"/>
+      <xs:element name="varutyp" type="lex:varutyp" />
+      <xs:element name="tlv-substitution" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="tlv-utbytesperiod" type="def:tlv-utbytesperiod" minOccurs="0" maxOccurs="3" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="version" type="xs:string" />
+  </xs:complexType>
+
+  <xs:complexType name="lmartikel">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">
+        Beskriver en läkemedelsartikel, ärver grundstruktur från def:artikel
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="def:artikel">
+        <xs:sequence>
+          <xs:element name="nplpackid">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1" />
+                <xs:maxLength value="14" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="europeiskt_godkannandenr" minOccurs="0" nillable="true">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="15" />
+                <xs:maxLength value="16" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="artikel_utbytbar" type="lex:yesno" />
+          <xs:element name="artikel_utbytbar_orsak" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1" />
+                <xs:maxLength value="80" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="ddd_per_forpackning" nillable="true" minOccurs="0">
+            <xs:simpleType>
+              <xs:restriction base="xs:decimal">
+                <xs:totalDigits value="8" />
+                <xs:fractionDigits value="3" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="endast_dos" type="lex:yesno" />
+          <xs:element name="endast_sjukhusbruk" type="lex:yesno" />
+          <xs:element name="marknadsfors" type="lex:yesno" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="varunummer_ref">
+    <xs:attribute name="varunummer" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:maxLength value="6" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="tjanst">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">Beskriver en tjanst, ärver grundstruktur från def:artikel</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="def:artikel">
+        <xs:sequence>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="handelsvara">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">Beskriver en handelsvara, ärver grundstruktur från def:artikel</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="def:artikel">
+        <xs:sequence>
+          <xs:element name="handelsvarugrupp" type="lex:handelsvarugrupp" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="artikel_id">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">En produkts identifikations-nummer</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="artikel_id_typ" type="lex:artikel-id-typ" use="required" />
+    <xs:attribute name="id_varde" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:maxLength value="70" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="gfrom_datum" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:date">
+          <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="tom_datum" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:date">
+          <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="produkt_namn">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">Namn på produkt</xs:documentation>
+    </xs:annotation>
+    <xs:attribute name="produkt_namn_typ" type="lex:produkt-namn-typ" use="required" />
+    <xs:attribute name="namn" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1" />
+          <xs:maxLength value="100" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="gfrom_datum" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:date">
+          <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="tom_datum" use="optional">
+      <xs:simpleType>
+        <xs:restriction base="xs:date">
+          <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="utbytbarhet">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">
+        Anger produktens utbytbarhets grupp med tillhörande giltighetsperiod
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="utbytbarhet_form_grupp" type="lex:utbytbarhet-form-grupp" />
+      <xs:element name="utbytbarhet_styrka_grupp" type="lex:utbytbarhet-styrka-grupp" />
+      <xs:element name="utbytbarhet_substans_grupp" type="lex:utbytbarhet-substans-grupp" />
+      <xs:element name="gfrom_datum">
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+            <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="tom_datum" minOccurs="0" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+            <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="farmaceutisk_produkt_ref">
+    <xs:attribute name="ref" type="xs:IDREF" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="farmaceutisk_produkt">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">
+        Innehåll för läkemedelsprodukt, kan finnas flera per lmprodukt
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="beskrivning" minOccurs="0" maxOccurs="1" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="40"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="refererande_mangd" type="lex:refererande-mangd" minOccurs="1" maxOccurs="1" />
+      <xs:element name="pharmaceutical_product_id_npl">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="18" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="bestandsdelar">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="bestandsdel" type="def:bestandsdel" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="bestandsdel">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">Beskriver en beståndsdel för en pharmaceutisk produkt</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="bestandsdel_id_ext" minOccurs="1" maxOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="18" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="bestandsdel_mangd" minOccurs="0" maxOccurs="1"  nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="12" />
+            <xs:fractionDigits value="3" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="bestandsdel_enhet" type="lex:bestandsdel-enhet" minOccurs="0" maxOccurs="1"  nillable="true" />
+      <xs:element name="bestandsdel_roll" type="lex:bestandsdel-roll" minOccurs="1" maxOccurs="1" />
+      <xs:element name="bestandsdel_tillaggsenhet" type="lex:bestandsdel-tillaggsenhet" minOccurs="0" maxOccurs="1"  nillable="true" />
+      <xs:element name="substans_ref" type="def:substans_ref" minOccurs="1" maxOccurs="1" />
+      <xs:element name="bestandsdels_id_relation" minOccurs="0" maxOccurs="1" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+              <xs:maxLength value="18" />
+            </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="substans" type="def:substans" />
+
+  <xs:complexType name="substans_ref">
+    <xs:attribute name="ref" type="xs:IDREF" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="substans">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">
+        Beskriver en substans för en beståndsdel och en läkemedelsartikel
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="svenskt_namn">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="1000" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="cas_nummer" minOccurs="0" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="12" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nplsubstansid">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="18" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="relationer" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="relation" type="def:relation" minOccurs="0" maxOccurs="unbounded" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="relation">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">Beskriver en relation till en substans</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="relationstyp" type="lex:substansrelation" minOccurs="1" maxOccurs="1" />
+      <xs:element name="substans_id_relation" minOccurs="1" maxOccurs="1">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="18" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="intressent" type="def:intressent" />
+
+  <xs:complexType name="intressent_ref">
+    <xs:attribute name="intressent_roll" type="lex:intressent-roll" use="required" />
+    <xs:attribute name="ref" type="xs:IDREF" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="intressent">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">Beskriver en intressent för produkt eller artikel</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="namn">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="160" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="momsnummer" minOccurs="0" nillable="true" >
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="20" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="intressent_id_ext">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="18" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="adress" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+             <xs:element name="adress_1" nillable="true" minOccurs="0">
+               <xs:simpleType>
+                 <xs:restriction base="xs:string">
+                   <xs:minLength value="1" />
+                   <xs:maxLength value="60" />
+                 </xs:restriction>
+               </xs:simpleType>
+             </xs:element>
+             <xs:element name="adress_2" nillable="true" minOccurs="0">
+               <xs:simpleType>
+                 <xs:restriction base="xs:string">
+                   <xs:minLength value="1" />
+                   <xs:maxLength value="60" />
+                 </xs:restriction>
+               </xs:simpleType>
+             </xs:element>
+             <xs:element name="adress_3" nillable="true" minOccurs="0">
+               <xs:simpleType>
+                 <xs:restriction base="xs:string">
+                   <xs:minLength value="1" />
+                   <xs:maxLength value="60" />
+                 </xs:restriction>
+               </xs:simpleType>
+             </xs:element>
+             <xs:element name="adress_4" nillable="true" minOccurs="0">
+               <xs:simpleType>
+                 <xs:restriction base="xs:string">
+                   <xs:minLength value="1" />
+                   <xs:maxLength value="60" />
+                 </xs:restriction>
+               </xs:simpleType>
+             </xs:element>
+             <xs:element name="land_kod" type="lex:land-kod" />
+           </xs:sequence>
+         </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="pris_artikel">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">Beskriver pris för en artikel</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="aip">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="9" />
+            <xs:fractionDigits value="2" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="aup">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="9" />
+            <xs:fractionDigits value="2" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="gfrom_datum">
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+            <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="gtom_datum" minOccurs="0" nillable="true" >
+        <xs:simpleType>
+          <xs:restriction base="xs:date">
+            <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="begransad_subvention" nillable="true" minOccurs="0">
+          <xs:simpleType>
+              <xs:restriction base="xs:string">
+                  <xs:minLength value="1" />
+                  <xs:maxLength value="2000" />
+              </xs:restriction>
+          </xs:simpleType>
+      </xs:element>
+      <xs:element name="pristyp" type="lex:pristyp" nillable="true" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="forvaringsfall">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv">Beskriver ett förvaringsfall för en artikel</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="forvaringsfall_typ" type="lex:forvaringsfall-typ" />
+      <xs:element name="hallbarhet_enhet" type="lex:hallbarhet-enhet" />
+      <xs:element name="forvarings_temperatur" type="lex:forvarings-temperatur" />
+      <xs:element name="hallbarhet" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="9" />
+            <xs:fractionDigits value="0" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+        <xs:element name="forvaringsfallkod_ext" minOccurs="0" maxOccurs="1" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="18" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="pharmaceutical_product_id_npl" minOccurs="0" maxOccurs="1" nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="18" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tlv-utbytesperiod">
+    <xs:annotation>
+      <xs:documentation xml:lang="sv" />
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="klusterid">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="8" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="periodens-vara" type="def:flagga-med-datum-rang" />
+      <xs:element name="bestallningsstopp" type="def:flagga-med-datum-rang" />
+      <xs:element name="aipperenhet" minOccurs="0"  nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="9" />
+            <xs:fractionDigits value="2" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="aupperenhet" minOccurs="0"  nillable="true">
+        <xs:simpleType>
+          <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="9" />
+            <xs:fractionDigits value="2" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="start_datum" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:date">
+          <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="stopp_datum" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:date">
+          <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:simpleType name="flagga">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Y" />
+      <xs:enumeration value="N" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="rang">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="3" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="flagga-med-datum">
+    <xs:simpleContent>
+      <xs:extension base="def:flagga">
+        <xs:attribute name="start_datum" use="optional">
+          <xs:simpleType>
+            <xs:restriction base="xs:date">
+              <xs:pattern value="\p{Nd}{4}-\p{Nd}{2}-\p{Nd}{2}" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:attribute>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="flagga-med-datum-rang">
+    <xs:simpleContent>
+      <xs:extension base="def:flagga-med-datum">
+        <xs:attribute name="rang" use="optional" type="def:rang" />
+        <xs:attribute name="historisk-rang" use="optional" type="def:rang" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:schema>

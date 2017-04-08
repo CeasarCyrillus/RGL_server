@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="iterering">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="001">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Recept får itereras</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="002">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Recept får inte itereras</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="003">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Recept för humant bruk får itereras</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="004">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Recept får itereras endast om receptet är elektroniskt eller i pappersformat som förvaras på öppenvårdsapotek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

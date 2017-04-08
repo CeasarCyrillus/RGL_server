@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="utlamnandebegransning">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="D01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Får endast utlämnas för behandling av ADHD hos barn och ungdomar om förskriven av läkare med specialistkompetens i barn/ungdomspsykiatri, psykiatri, rättspsykiatri, barn/ungdomsneurologi med habilitering eller läkare med dispens från LV. LVFS 2002:7</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Får utlämnas för behandling av opiatberoende endast om förordnad av läkare med spec.komp. i psykiatri verksam vid sjukvårdsinr. inom beroendevård där läkemedelsass. underhållsbeh. ges eller läkare med delegation vid samma inrättning enligt LVFS 2004:15</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Får utlämnas endast om det har förordnats av läkare med specialistkompetens i dermatologi eller av läkare med dispens från Läkemedelsverket. LVFS 2013:9</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Får utlämnas endast om det förordnats av läkare som är behörig att utföra abort samt endast till klinik där läkaren är verksam. Läkemedlet får inte utlämnas till enskild patient efter ordination på recept. LVFS 1992:4</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

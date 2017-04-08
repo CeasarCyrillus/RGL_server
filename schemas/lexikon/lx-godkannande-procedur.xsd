@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="godkannande-procedur">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nationella proceduren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Centrala proceduren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="3">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ömsesidiga proceduren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="4">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Decentrala proceduren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="5">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pharmaceutical Risk Assessment Committee</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="APL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Apotekstillverkade läkemedel.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

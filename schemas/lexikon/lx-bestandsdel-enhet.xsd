@@ -1,0 +1,567 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="bestandsdel-enhet">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="E5">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">miljoner koloniformande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D9">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sporulerade oocystor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 hemagglutinationinhibitionstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D8">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Standardiserad kvalitetsenhet - husdammskvalster</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E3">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mol</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E4">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">miljoner celler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E1">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">% inhibition (ELISA)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A4">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log2 antikroppstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A5">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Viruspartiklar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A6">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Log 10 ELISA enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A7">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infektiös dos i vävnadskultur(50%)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A8">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log2 HI-enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A9">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Effektiv dos i 60% av försöksdjuren (kanin)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B1">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Effektiv dos i 80% av försöksdjuren (kanin)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Speywoodenheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B3">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koloniformande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B4">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Procentandel immuniserade kaniner med 25% serologiskt EIA svar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B5">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Procentandel immuniserade kaniner med 50% serologiskt EIA svar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B6">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Procentandel immuniserade kaniner med 60% serologiskt EIA svar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B7">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Procentandel immuniserade kaniner med 70% serologiskt EIA svar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B8">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Procentandel immuniserade kaniner med 120% serologiskt EIA svar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="B9">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Optisk densitet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C1">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 antikroppstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Fluoriscerande fokusenheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C3">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemolytiska enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C4">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">celler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C5">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Geometriskt medelvärde av neutralisationsenheter inducerade i marsvin efter två immuniseringar med 0.5 ml vaccin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C8">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Cellantal av Bordetella bronchiseptica (log10)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C9">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Fokusbildande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C7">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Q-feberenhet (relativ styrka mätt i ELISA)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D1">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikromol</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="C6">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antigenenheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kilogram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">gram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milligram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrogram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="11">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">internationella enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="12">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">tusen internationella enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="13">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milliliter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="15">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikroliter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="17">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">miljoner internationella enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="19">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">liter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="21">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">procent</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="89">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Megabequerel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="29">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">nanogram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="30">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Koloniformande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="24">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dos(er)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="73">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ph. Eur.-U</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="74">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">k Ph.Eur.- U</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="20">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="25">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lf (flockningsenheter)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="26">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">TU (tuberkulinenheter)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="63">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">MG (ÖVERS V TILLV)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="71">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ARMOR-ENHETER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="72">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">FIP-U</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="80">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ELISA enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="83">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">MG (BORTG V TILLV)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D-AU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">D-Antigenenheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">D-UNITS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="31">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Plackbildande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="32">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Infektiös dos i vävnadskultur(50%)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="33">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="34">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Infektiös dos i cellkultur (50%)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="35">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Standardiserad kvalitetsenhet (allergener)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="36">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Histaminekvivalenter baseras på pricktest</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="37">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dödlig dos i 50% av försöksdjuren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="38">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log Antal bakterier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="39">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemagglutinationsenheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="40">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemagglutinationshämmande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="41">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Minsta dödliga dos för 100% av försöksdjuren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="42">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Relativ aktivitet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="43">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log2 Virusneutraliserande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="44">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Seroneutralisationsantikroppstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="45">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Effektiv dos i 50% av försöksdjuren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="46">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Effektiv dos i 80% av försöksdjuren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="47">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Skyddande dos i 80% av djuren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="48">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Anti Xa enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="49">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antal oocystor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="50">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Seroagglutinationsantikroppsenheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="51">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Total Combining Power-enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="52">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Allerganenheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="53">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Immunofluorescens-antikroppsenheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="54">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Infektiös dos i 50% av försöksdjur mätt med fluorescensbestämning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="55">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log2 Toxinneutralisationstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="56">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log2 Agglutinationstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="57">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Mycoplasma hyopneumoniae DNA cellekvivalenter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="58">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Färgförändringsenheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="90">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gigabequerel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="91">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kilobequerel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="75">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kallikrein inaktivatorenhet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="76">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Infektiv dos i 50% av äggen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="77">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Skyddande dos i 50% av djuren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="78">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Interferensprocent</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="92">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">antikroppstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="79">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plackbildande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="93">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">heparinneutraliserande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="94">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Grisskyddande dos (PhEur)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="95">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 Embryoinfektiv dos (50%)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="96">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Standardiserad kvalitetsenhet - tablett (allergener)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="97">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Protektiv dos (80%) i hamster (Ph.Eur.0447)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="100">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 antikroppstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A1">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log2 Seroneutralisationsantikroppstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">millimol</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A3">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Serorespons i 80% av djuren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ELISA-infektiös dos 50%</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D3">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Serumneutralisationstiter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D4">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">log10 genomkopior</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D5">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">celler per kvadratcentimeter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D6">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antikroppmikroagglutionation-lytisk reaktion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="D7">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhibition ELISA 50%</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="E6">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Skyddande dos i 50% av djuren</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

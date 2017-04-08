@@ -1,0 +1,4342 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="handelsvarugrupp">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Handelsvaror</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X54">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Desinfektionsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X54G">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övrigt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X54GA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Desinfektionsmedel, övrigt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X54GA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Desinfektionsmedel, övrigt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Livsmedel för särskilda näringsändamål (EJ förmån)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75B">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Livsmedel för speciella medicinska ändamål, med standardiserat näringsinnehåll</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75BB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sondnäringar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75BB60">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Till barn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75BE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kosttillägg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75BE10">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kompletta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75BE20">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Till barn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75E">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Livsmedel för speciella medicinska ändamål, med särskilt anpassat näringsinnehåll</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75EE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fenylketonuri (PKU)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75EE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fenylketonuri (PKU)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75EK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mag- och tarmsjukdomar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75EK00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mag- och tarmsjukdomar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75ES">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Specialnäring till barn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75ES00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Specialnäring till barn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75K">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Glutenfria produkter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75KB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bröd och kex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75KB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bröd och kex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75P">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Proteinreducerade produkter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75PE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mix, gryn och flingor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="X75PE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mix, gryn och flingor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Handelsvaror inom förmånen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Livsmedel för särskilda näringsändamål (Förmån)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75B">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Livsmedel för speciella medicinska ändamål, med standardiserat näringsinnehåll</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sondnäringar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BB10">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Standard</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BB20">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fiber</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BB30">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Protein</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BB40">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Energi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BB50">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Låg energi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BB60">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Till barn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kosttillägg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BE10">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kompletta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BE20">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Till barn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BE30">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Icke kompletta, safttyp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75BE40">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Icke kompletta, övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75E">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Livsmedel för speciella medicinska ändamål, med särskilt anpassat näringsinnehåll</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Diabetes</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Diabetes</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fenylketonuri (PKU)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fenylketonuri (PKU)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lungsjukdomar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lungsjukdomar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mag- och tarmsjukdomar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EK00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mag- och tarmsjukdomar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Metabolisk stress</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EN00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Metabolisk stress</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75ES">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Specialnäring till barn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75ES00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Specialnäring till barn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75ES10">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Komjölksproteinallergi m.m.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75ES20">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Njursjukdomar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75EU00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Njursjukdomar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75H">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Livsmedel för speciella medicinska ändamål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75HB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Berikningsprodukter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75HB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Berikningsprodukter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75K">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Glutenfria produkter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bröd och kex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bröd och kex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fiber</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fiber</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mix</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mix</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KK00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ströbröd/skorpmjöl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KN00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ströbröd/skorpmjöl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KX">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75KX00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75N">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Produkter vid laktosintolerans</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75NB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enzymer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75NB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enzymer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75NE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75NE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75P">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Proteinreducerade produkter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75PB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bröd och kex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75PB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bröd och kex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75PE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mix, gryn och flingor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75PE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mix, gryn och flingor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75PH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75PH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75PX">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75PX00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75X">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga produkter för särskilda näringsändamål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75XK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gröt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75XK00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gröt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75XX">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y75XX00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förbrukningsartiklar - Stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80A">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, slutna, Absorptionsbandage</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80AA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorptionspåsar 2-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80AA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorptionsbandage, för tvådelsbandage</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80AB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorptionspåsar m häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80AB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorptionsbandage med häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80B">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antiodörmedel och luktabsorbenter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80BA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antiodörmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80BA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antiodörmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80D">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fästanordningar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor för häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor för häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor för tvådelsbandage med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor för tvådelsbandage med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor, konvexa för tvådelsbandage med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DG00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor, konvexa för tvådelsbandage med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till plattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till plattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Byglar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DL00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Byglar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bälten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80DM00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bälten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80E">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förbandsmaterial</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80EB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80EB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80EF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kompresser</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80EF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kompresser</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80EG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kompresser med häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80EG00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kompresser med häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80EH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorberande förband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80EH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorberande förband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80F">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irrigationsartiklar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80FA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Startset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80FA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Startset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80FB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irrigationspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80FB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irrigationspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80FC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till irrigationspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80FC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till irrigationspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80G">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, slutna för Colostomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse sluten 1-dels m häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelsbandage med häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse sluten 2-dels m kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">För tvådelsbandage med kopplingsring, colostomier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse sluten 1-dels utan häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelsbandage utan häfta, colostomier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse sluten 1-dels m häfta, konvex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelsbandage med häfta, konvex, colostomier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse sluten 1-dels m häfta, spolbar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelsbandage med häfta, spolbar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse sluten häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80GI00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">För häftkopplingssystem, colostomier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80H">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, tömbara för Ileo-/Colostomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse tömbar 1-dels m häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelsbandage med häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse tömbar 2-dels m kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">För tvådelsbandage med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse tömbar 2-dels backventil+kopplingsring </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">För tvådelsbandage med kopplingsring och backventil </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse tömbar 1-dels m häfta, konvex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelsbandage med häfta, konvex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse tömbar1-dels m häfta+backventil</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelsbandage med häfta och backventil</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse tömbar häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80HG00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">För häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80I">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, tömbara för Urostomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80IA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse urostomi 1-dels m häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80IA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelsbandage med häfta, urostomier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80IB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse urostomi 2-dels m kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80IB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">För tvådelsbandage med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80IC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse urostomi 1-dels häfta, konvex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80IC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelsbandage med häfta, konvex</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80ID">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">För häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80ID00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">För häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80K">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påstillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80KC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påslås</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80KC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påslås</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80KD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Skyddspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80KD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Skyddspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80KF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga påstillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80KF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga påstillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80KI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fixering för urinuppsamlingspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80KI00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fixering för urinuppsamlingspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80L">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningshjälpmedel för kontinent stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80LA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dränagepåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80LA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dränagepåse, kontinent stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80LB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sköljsprutor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83B">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar med tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar,  specifika tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar,  specifika tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset till insulinpump, mjuka kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset till insulinpump, mjuka  kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset till insulinpump, stålkanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset till insulinpump, stålkanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanyler till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanyler till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset till insulinpump, raka stålkanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BG00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset till insulinpump, raka stålkanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar, Hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar, Hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förlängningsslangar till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BK00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förlängningsslangar till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanylförband till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BM00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanylförband till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BZ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83BZ00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83C">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar, engångs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar, engångs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar,  specifika tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar,  specifika tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar, kassetter/reservoarer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar, kassetter/reservoarer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar, Hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar, Hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionskanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionskanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Implanterbara katetersystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CI00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Implanterbara katetersystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionskanyler till portar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CJ00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionskanyler till portar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med kanyl,  till infusionspump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CK00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med kanyl,  till infusionspump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsaggregat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CL00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsaggregat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanylförband till infusionspump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CM00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanylförband till infusionspump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionstillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CO00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionstillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionstillbehör för dialysbehandling</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CP00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionstillbehör för dialysbehandling</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar, service</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83CS00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar, service</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83E">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater / Nebulisatorer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater / Nebulisatorer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater / Nebulisatorer, tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater / Nebulisatorer, tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater / Nebulisatorer, Hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater / Nebulisatorer, Hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PEF-mätare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PEF-mätare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PEF-mätare, tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EG00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PEF-mätare, tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater/Inhalerbart insulin, tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83EI00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater/Inhalerbart insulin, tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83ES">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater / Nebulisatorer, service</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83ES00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater / Nebulisatorer, service</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83G">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gastillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83GA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Grimmor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83GA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Grimmor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83GB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Masker</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83GB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Masker</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83I">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar med integrerat system</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83IA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar med integrerat system</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83IA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar med integrerat system</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83IZ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör till Insulinpumpar med integrerat system</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83IZ00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör till Insulinpumpar med integrerat system</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83M">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tester</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83MA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pt i blod, testremsor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83MA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pt i blod, testremsor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83MB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pt i blod, kontrollösningar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83MB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pt i blod, kontrollösningar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83O">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinkatetrar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83OA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinkateter för införande av läkemedel i urinblåsan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83OA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinkateter med luer-lock fattning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83P">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dermatologiska Ocklusionsbandage</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83PA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hydrokolloida plattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83PA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hydrokolloida plattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83PB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tub-väv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83PB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tub-väv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83R">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83RA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppsstöd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83RA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppsstöd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83X">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fakturering</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83XA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Avgift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83XA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Faktureringsavgift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gaskostnader</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85A">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gas-Hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85AA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hyra/månad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85AA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hyra/månad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85AB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hyra/dygn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85AB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hyra/dygn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85B">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gas-Transport</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85BA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fast transportkostnad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85BA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fast transportkostnad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85BB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Transportkostnad/flaska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85BB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Transportkostnad/flaska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85C">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gasbesparare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85CA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hyra/dygn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85CA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hyra/dygn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85D">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gas-Faktureringsavgift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85DA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Faktureringsavgift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förbrukningsartiklar Stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90A">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor för fäste av påsar för tvådelsbandage</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor med häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor med häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppklippbar hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förstansad hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Formbar hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor, konvexa med häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor, konvexa med häftkopplingssystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppklippbar hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förstansad hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Formbar hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppklippbar hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AC02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förstansad hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AC03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Formbar hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor, konvexa med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plattor, konvexa med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppklippbar hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AD02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förstansad hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AD03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Formbar hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till plattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till plattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90AE01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stödringar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90B">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stomipåsar, slutna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, slutna 1-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, slutna 1-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftpåse förstansad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftpåse uppklippbar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftpåse med konvexitet, förstansad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BA04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftpåse med konvexitet, uppklippbar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BA05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftpåse med karaya utan häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, slutna 2-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, slutna 2-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftkoppling</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90C">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stomipåsar, tömbara</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, tömbara 1-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, tömbara 1-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, 1-dels förstansade hål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, 1-dels uppklippbara hål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, konvex förstansade hål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, konvex uppklippbara hål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse med backventil förstansade hål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse med backventil uppklippbara hål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA07">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högflödespåse med och utan backventil med och utan konvexitet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA08">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, 1-dels postoperativa</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA09">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sår- fistelbandage</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA10">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse 1-dels med karaya</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, tömbara 2-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, tömbara 2-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar 2-dels med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högflödespåsar 2-dels med kopplingsring med och utan backventil</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar 2-dels postoperativa med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CB04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar 2-dels med häftkoppling</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CB05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högflödespåsar 2-dels med häftkoppling med och utan backventil</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CB06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar 2-dels postoperativa med häftkoppling</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90D">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar med backventil, tömbara</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80LB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sköljsprutor, kontinent stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80LC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningskatetrar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80LC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningskatetrar, kontinent stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80LD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Glidmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80LD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Glidmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80M">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kontinensproppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80MA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Proppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80MA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Proppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80MB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80MB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80N">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösningsmedel för häftor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80NA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösningsmedel för häftor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80NA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösningsmedel för häftor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80S">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddande och/eller tätande produkter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Basplattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Basplattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösningar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösningar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pastor m.m.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pastor m.m.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Puder</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Puder</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ringar/Strips</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80SE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ringar/Strips</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80T">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, urinuppsamlings-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80TA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinuppsamlingspåse/nattpåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80TA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinuppsamlingspåse/nattpåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80Z">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga stomihjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y85DA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Faktureringsavgift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80ZA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lakansskydd, engångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80ZA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lakansskydd, engångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80ZB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lakansskydd, flergångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80ZB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lakansskydd, flergångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80ZE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stomigördel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y80ZE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stomigördel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förbrukningsartiklar - Diabetes</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82B">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor med fast kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor med fast kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionspennor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionspennor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pennkanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pennkanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kvarliggande kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BG00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kvarliggande kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Desinfektionstorkar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82BK00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Desinfektionstorkar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82F">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodanalysmaterial</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för glukos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för glukos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för beta-ketoner</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för beta-ketoner</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare, flergångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare, flergångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lancetter till blodprovtagare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FI00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lancetter till blodprovtagare, flergångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare, engångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FJ00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare, engångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare PRO, flergångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FK00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare PRO, flergångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lancetter till blodprovtagare PRO, engångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82FL00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lancetter till blodprovtagare PRO, engångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82I">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinanalysmaterial</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82IA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för glukos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82IA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för glukos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82IB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för glukos och ketoner</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82IB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för glukos och ketoner</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82IC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för ketoner</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y82IC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för ketoner</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förbrukningsartiklar - Läkemedelsnära</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83A">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor med fast kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor med fast kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor utan kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor utan kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor med luer-lock</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor med luer-lock</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionskanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionskanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppdrags-/injektionskanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AG00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppdrags-/injektionskanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Avstängningsproppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Avstängningsproppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionspennor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AI00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionspennor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionspenn-specifika tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AK00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionspenn-specifika tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör till injektionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y83AL00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör till injektionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorberande förband med häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorberande förband med polyuretanskum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorberande förband med superabsorbenter och hydrokolloid</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Alginatförband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC07">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Silikonförband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC08">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förband till kontinent stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90L">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftborttagningsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spray, häftborttagningsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spray, häftborttagningsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning, häftborttagningsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning. häftborttagningsmedel, silikonbaserat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Servetter, häftborttagning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Servetter, häftborttagning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Servetter häftborttagning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Servetter häftborttagning, silikobaserat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinsk bensin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinsk bensin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90LC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinsk bensin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90M">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddande och/eller tätande produtker</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddsplattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddsplattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddsplattor, tunn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddsplattor, standard</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spray</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Servetter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MB04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pastor hudskyddande</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pastor hudskyddande</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pasta, tub</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MC02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pasta, stav</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Puder</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Puder</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Puder</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90ME">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddsringar och stomikragar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90ME00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddsringar och stomikragar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90ME01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddsringar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90ME02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stomikragar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ytterförstärkning för stomiplattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ytterförstärkning för stomiplattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MF01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hydrokolloidförstärkning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90MF02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häfta, ytterförstärkning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90N">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga stomihjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lakansskydd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lakansskydd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lakansskydd, engångs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lakansskydd, flergångs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stödgördel, stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stödgördel, stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stödgördel, stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bälten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bälten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90NC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bälten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förbrukningsartiklar - Diabetes</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92A">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor med fast kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor med fast kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">0,1 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">0,3 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">0,5 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AA04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">1,0 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förfyllbar injektionsspruta med kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förfyllbar injektionsspruta med kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">0,1ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA13">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, 1-dels med formbar hålstorlek</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GG00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GG01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">0,3ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Flergångspenna för administrering av insulin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Flergångspenna för administrering av insulin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Utan minne</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AC02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Med minne</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanyler till insulinpenna med standardfattning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanyler till insulinpenna med standardfattning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">29 G</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AD02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">30 G</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AD03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">31 G</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AD04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">32 G</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kvarliggande kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kvarliggande kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92AE01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kvarliggande kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92B">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Analysmaterial för blod</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för blodglukos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för blodglukos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vanliga mätare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kasettmätare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stickor till mätare för synskadade</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för mätning av betaketoner i blod</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för mätning av betaketoner i blod</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för mätning av betaketoner i blod</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sensorer och andra tillbehör för kontinuerlig glukosmätning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sensorer och andra tillbehör för kontinuerlig glukosmätning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sensorer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92BC02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Testpluggar och dylikt (ändra namn)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92C">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Analysmaterial för urin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92CA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för mätning av glukos i urin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92CA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för mätning av glukos i urin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92CA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92CB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för mätning av betaketoner i urin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92CB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för mätning av betaketoner i urin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92CB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92CC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för mätning av betaketoner och glukos i urin </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92CC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor för mätning av betaketoner och glukos i urin </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92CC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teststickor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92D">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92DA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Flergångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92DA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Flergångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92DA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare för lancetter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92DA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare för lancetter i kassett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92DB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Engångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92DB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Engångs-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92DB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Blodprovtagare med lancett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92E">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lancetter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92EA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lancetter till blodprovstagare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92EA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lancetter till blodprovstagare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92EA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lancetter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92EA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lancetter i kassett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92F">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med mjuka raka kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med mjuka raka kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kombipack, infusionsset med extra nålar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med inserter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med mjuk kanyl, 90 grader</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med mjuk kanyl, 90 grader</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med inserter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med inserter och reservoar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med stålkanyl, 90 grader</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med stålkanyl, 90 grader</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanyler till infusionsset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanyler till infusionsset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mjuka raka kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FD02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mjuka kanyler , 90 grader</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FD03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stålkanyl, 90 grader</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Slang till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Slang till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92FE01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Slang</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92G">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Reservoar/ampull</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inserters</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanylförband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GA04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Podar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Desinfektionsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftborttagningsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92GB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hudskyddande medel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92H">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpumpar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Implanterbar insulinpump med tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Specifika tillbehör till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Specifika tillbehör till insulinpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Serviceset och batterier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Startkit</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Adapters</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HB04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ampullock/batterilock</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HB05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kolvar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HB06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fjärrkontroller</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bärsystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bärsystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bärsystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpump hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Insulinpump hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y92HD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Läkemedelsnära</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93A">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor med fast kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsprutor luer  tvådelad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsprutor luer  tredelad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AA04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionssprutor luer-lock tredelad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionskanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionskanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionskanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppdragskanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppdragskanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppdragskanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AC02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppdragskanyl slutet system</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AC03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till uppdragskanyl slutet system</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionspennor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionspennor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionspennor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AD02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Specifika tillbehör till injektionspennor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör till injektionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör till injektionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93AE01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör till injektionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93B">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsaggregat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsaggregat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsaggregat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusonsaggregat till infusionspump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsaggregat special (cytostatika mm)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionskanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionskanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionskanyl </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionskanyl till portar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inplanterbart port- och katetersystem för intravenös injektion/infusion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset till infusionspump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset till infusionspump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med mjuk kanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mjuk kanyl till infusionsset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionstillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionstillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förlängningsslang</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BD02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tre-vägskran</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BD03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tre-vägskran med förlängningsslang</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BD04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Avstängningsproppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BD05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanylförband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BD06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsfilter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar engångs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar engångs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BE01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">0-99 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BE02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">100-199 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BE03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">med kateter  100-199 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BE04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">200-299 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BE05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">med kateter200-299 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BE06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">300-600 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BE07">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">med kateter 300-600 ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ampuller</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kateterar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bolusset/infusionskit</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kasetter/reservoarer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kasetter/ reserovarer med slang</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fjärrdoseringkontroll</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF07">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bärsystem/hållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF08">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Batterier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF09">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Connectorer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BF10">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nätadapter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BG00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BG01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BG02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspump bärbar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BG03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspump sprutpump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BG04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspump implanterbar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar service/hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BH00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionspumpar service/hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BH01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Service</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BH02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hyra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93C">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv"> Infusionshjälpmedel vid dialys</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Aggregatskydd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Aggregatskydd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Aggregatskydd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Avloppslang</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Avloppslang</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Avloppsslang</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Slangset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Slangset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Slangset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PD-förband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PD-förband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93CE01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PD-förband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93D">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lungfunktion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lungfunktion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PEF-mätare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationstillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationstillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nebulisator för kompressor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nebulisatoröverdel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nebulisatorunderdel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Masker</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munstycken</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">T-stycken</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB07">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinhållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB08">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nebulisatorslang</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB09">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Skyddslock</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB10">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Filter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DB11">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inahalationsapparater</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inahalationsapparater</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Andningsbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DC02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nebulisatorer/kompressorer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater tillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nätadapter/kabel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DD02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Batteriladdare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DD03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Batterier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DD04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bärsystem</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater service</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsapparater service</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93DE01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Service</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93E">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gastillbehör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93EA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Grimmor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93EA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Grimmor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93EA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Grimmor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93EB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Masker</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93EB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Masker</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93EB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Masker</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93F">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tester</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93FA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tester</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93FA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tester</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93FA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Testremsor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93FA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kontrollösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93G">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinkatetrar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93GA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinkatetrar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93GA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinkatetrar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93GA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urinakateter för införande av läkemedel i urinblåsan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93H">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dermatologiska ocklusionsbandage</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93HA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hydrokolloida plattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93HA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hydrokolloida plattor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93HA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Standard</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93HA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tunna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93HB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tubväv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93HB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tubväv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93HB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tubväv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93I">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93IA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppsstöd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93IA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppsstöd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93IA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppsstöd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningshjälpmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar 1-dels uppklippbara hål, flerkammarpåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA07">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, 1-dels förstansade hål konvex platta, flerkammarpåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar 1-dels förstansade hål, flerkammarpåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar med kopplingsring, flerkammarpåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DB04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar med häftkoppling, flerkammarpåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA12">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, 1-dels uppklippbar förstärkt platta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90CA11">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påsar, 1-dels förstansad, förstärkt platta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BA06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftpåse förstansad, förstärkt platta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA08">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, 1-dels uppklippbara hål konvex platta, flerkammarpåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90BA07">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftpåse Uppklippbar,  förstärkt platta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med stålkanyl</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stålkanyl till infusionsset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, tömbara 1-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, tömbara 1-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, 1-dels förstansade hål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, 1-dels uppklippbara hål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, 1-dels förstansade  hål konvex platta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DA04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, 1-dels uppklippbara hål konvex platta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, tömbara, 2-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar, tömbara, 2-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar med kopplingsring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90DB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Urostomipåsar med häftkoppling</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90E">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Minicap, minipåse med absorbtion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90EA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90EA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endelspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90EA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse 1-dels med häftkoppling</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90EB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tvådelspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90EB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tvådelspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90EB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påse 2-dels med tryckkoppling</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90F">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irrigationsartiklar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Startsset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Startsset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Startset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irrigationspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irrigationspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irrigationspåsar 1-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irrigationspåsar 2-dels</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till irrigationspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till irrigationspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90FC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillbehör till irrigationspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90G">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påstillbehör, stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påslås, klämmor, clips</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Påslås, klämmor, clips</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Flergångs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Engångs</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Skyddspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Skyddspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Skyddspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fixeringspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fixeringspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fixeringspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förtjockningsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GD00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förtjockningsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GD01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förtjockningsmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antiodörmedel och luktabsorbenter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GE00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antiodörmedel och luktabsorbenter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GE01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antiodörmedel och luktabsorbenter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öppningsbar lucka med häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GF00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öppningsbar lucka med häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90GF01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öppningsbar lucka med häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90H">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppsamlingspåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90HA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppsamlingspåsar, urin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90HA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppsamlingspåsar, urin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90HA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppsamlingspåsar, urin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90HA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sammankopplingsrör till uppsamlingspåsar, urin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90HB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppsamlingspåsar, tarm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90HB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppsamlingspåsar, tarm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90HB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uppsamlingspåsar, tarm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90I">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningshjälpmedel för kontinent stomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tappningskatetrar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tappningskatetrar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tappningskatetrar, ileostomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IA02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tappningskatetrar, urostomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IA03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga tappningskatetrar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sköljsprutor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sköljsprutor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sköljsprutor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Glidmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Glidmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90IC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Glidmedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90J">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kontinensproppar vid colostomi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90JA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Proppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90JA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Proppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90JA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Proppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90JB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningspåsar, kontinenspropp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90JB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningspåsar, kontinenspropp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90JB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tömningspåsar, kontinenspropp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90K">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förbandsmaterial för hud- och sårvård</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kompresser</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KA00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kompresser</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KA01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kompresser</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftor/fixering</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KB00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Häftor/fixering</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KB01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kirurgisk häfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KB02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Självhäftande väv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KB03">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Zinkhäfta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KB04">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sårfilm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KB05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fixeringsplatta för kateter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Specialförband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC00">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Specialförband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC01">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hydrofiberförband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y90KC02">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Absorberande förband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC07">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med mjuk kanyl, 90 grader</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC05">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med butterfly - nål</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC06">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsset med flera kanyler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Y93BC08">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mjuk kanyl, 90 grader, till infusionsset</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

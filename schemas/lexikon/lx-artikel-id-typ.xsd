@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace='urn:schemas-asab:lexikon' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:lex='urn:schemas-asab:lexikon'>
+  <xs:simpleType name='artikel-id-typ'>
+    <xs:restriction base='xs:string'>
+      <xs:enumeration value='historiskt-lev-artikelnr'>
+        <xs:annotation>
+          <xs:documentation xml:lang='sv'>Historiskt Leverantörens artikelnr</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='historiskt-nordiskt-varunr'>
+        <xs:annotation>
+          <xs:documentation xml:lang='sv'>Historiskt nordiskt varunr vid migreringstillfälle</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='historiskt-streck-kod'>
+        <xs:annotation>
+          <xs:documentation xml:lang='sv'>Historiskt Streckkod</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='lev-artikelnr'>
+        <xs:annotation>
+          <xs:documentation xml:lang='sv'>Leverantörens artikelnr</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='nordiskt-varunr'>
+        <xs:annotation>
+          <xs:documentation xml:lang='sv'>Nordiskt Varunummer</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value='streck-kod'>
+        <xs:annotation>
+          <xs:documentation xml:lang='sv'>Streckkod</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

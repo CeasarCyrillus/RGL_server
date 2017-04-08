@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="refererande-mangd">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1000ML">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per 1000 milliliter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="100G">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per 100 gram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CM2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mänger angivna per kvadratcentimeter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DOS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per avgiven dos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per farmaceutisk grundenhet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="G">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per gram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GACT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per gram aktiv substans</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IEACT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per IE aktiv substans</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per kg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KIEACT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per 1000 IE aktiv substans</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KULA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per kula</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MGAC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per milligram aktiv substans</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ML">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per milliliter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MLREC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per milliliter rekonstituerad lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PUFF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per puff</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PUMP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per pumpning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SPRAY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mängder angivna per sprayning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

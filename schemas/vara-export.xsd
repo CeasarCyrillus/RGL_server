@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+			xmlns:xi="http://www.w3.org/2001/XInclude" 
+			xmlns:asab="urn:schemas-asab:vara-export" 
+			xmlns:def="urn:schemas-asab:definitioner" 
+			xmlns:lex="urn:schemas-asab:lexikon" 
+			targetNamespace="urn:schemas-asab:vara-export" 
+			elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.7">
+	<xs:import namespace="urn:schemas-asab:definitioner" schemaLocation="asab-definitioner.xsd"/>
+	<xs:import namespace="urn:schemas-asab:lexikon" schemaLocation="asab-lexikon.xsd"/>
+	<xs:element name="envelope">
+		<xs:annotation>
+			<xs:documentation>Kuvert för export av produktlista</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="info">
+					<xs:annotation>
+						<xs:documentation>Anger huvud-information om export filen</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="antal_produkter" type="xs:nonNegativeInteger">
+								<xs:annotation>
+									<xs:documentation>Anger totalt antal produkter i listan</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="leveransinfo" nillable="true" minOccurs="0">
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="250" />
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<xs:element name="referenser">
+					<xs:annotation>
+						<xs:documentation>Listor med element som refereas från produklistan, tex. substanser och intressenter</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="intressenter">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="def:intressent" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation xml:lang="sv">Beskriver en intressent med id, namn och adresser. Denna refereas sedan från artikel/produkt</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="substanser">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element ref="def:substans" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation xml:lang="sv">Beskriver en substans med id, inn_namn och cas_nummer. Denna refereas sedan från artikel/produkt</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="produkter" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Innehåller en lista av antingen läkemedelsproduk eller handelsvaruprodukt</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:choice>
+								<xs:element ref="def:lmprodukt" minOccurs="0" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation xml:lang="sv">Representation av en läkemedelsprodukt</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element ref="def:hvprodukt" minOccurs="0" maxOccurs="unbounded">
+									<xs:annotation>
+										<xs:documentation xml:lang="sv">Represenation av en handelsvaruprodukt</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+			<xs:attribute name="schemaVersion" type="xs:string" use="required">
+				<xs:annotation>
+					<xs:documentation>Anger vilken version av xml schemat som följs. Denna måste stäma överrens med version-attributet i xml schemat</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+			<xs:attribute name="timeStamp" type="xs:dateTime" use="required">
+				<xs:annotation>
+					<xs:documentation>Anger tidsstämpeln när filen skapades</xs:documentation>
+				</xs:annotation>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

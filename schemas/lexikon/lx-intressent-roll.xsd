@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="intressent-roll">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AGENT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ombud</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ASMRMP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Substanstillverkare/råvaruleverantör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BILADD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Betalare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MAANCI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Auth. manufacturer ancillary medicinal substance</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MAH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Innehavare av godkännande för försäljning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MAHEXC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Innehavare av godkännande för försäljning i exportlandet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MAHORI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Innehavare av godkännande för försäljning för originalprodukt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MAMEDE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Manufacturer medical device</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MAPAPR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Deltillverkare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NBODY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Notified body</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PARDIS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Parallelldistributör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="REGAGT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Registreringsombud</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="REPACK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ompackare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Registreringsinnehavare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SBANSF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ansvarigt företag</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SBLEV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Leverantör</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TILLV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ansvarig tillverkare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,1217 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="land-kod">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mauritius</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEX">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mexico</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FSM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mikronesien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MCO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Monaco</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MNG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mongoliet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MDZ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mocambique</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MMR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Myanmar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NAM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Namibia</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NRU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nauru</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NPL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nepal</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NZL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nya Zeeland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NIC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nicaragua</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NER">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Niger</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NGA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nigeria</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OMN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oman</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PAK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pakistan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PLW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Palau</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PAN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Panama</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PNG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Papua Nya Guinea</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Paraguay</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PER">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Peru</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PHL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Filippinerna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Polen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="QAT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Qatar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MDA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Moldova</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ROM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rumänien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ryssland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RWA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rwanda</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KNA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">S:t Kitts och Nevis</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LCA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">S:t Lucia</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VCT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">S:t Vincent och Grenadinerna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SMR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">San Marino</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sao Tome och Principe</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SAU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Saudiarabien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SEN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Senegal</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SYC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Seychellerna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SLE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sierra Leone</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SGP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Singapore</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SVK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Slovakien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SVN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Slovenien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SLB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Salomonöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Somalia</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZAF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sydafrika</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LKA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sri Lanka</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SDN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sudan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Surinam</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SWZ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Swaziland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SYR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Syrien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TJK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tadjikistan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="THA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Thailand</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TGO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Togo</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TON">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tonga</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TTO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Trinidad och Tobago</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TUN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tunisien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TUR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Turkiet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TKM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Turkmenistan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TUV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tuvalu</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UGA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uganda</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UKR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ukraina</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TZA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tanzania</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="USA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">USA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="URY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uruguay</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UZB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uzbekistan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VUT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vanuatu</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VEN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Venezuela</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VNM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vietnam</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="YEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Yemen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="YUG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Jugoslavien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZMB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Zambia</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZWE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Zimbabwe</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Puerto Rico</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CIV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Elfenbenskusten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TCD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tchad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Korea, Nord-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ZAR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Demokratiska Republiken Kongo</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KGZ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kirgistan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MAR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Marocko</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KOR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Korea, Syd-</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ARE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Arabemiraten, Förenade</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CHE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Schweiz</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vatikanstaten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ABW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Aruba</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AIA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Anguilla</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ANT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nederländska Västindien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ASM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Amerikanska Samoa</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ATA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antarktis</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BMU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bermuda</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CCK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kokosöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Cooköarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CXR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Julön</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CYM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Caymanöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ESH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sahara, Västra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FLK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Falklandsöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GIB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gibraltar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GLP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Guadeloupe</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Grönland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GUF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Franska Guyana</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GUM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Guam</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HKG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hongkong</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MAC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Macao</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MSR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Montserrat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MTQ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Martinique</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MYT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mayotte</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NCL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nya Kaledonien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NIU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Niue</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PCN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pitcairn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="REU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Reunion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SHN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">S:t Helena</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SPM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">S:t Pierre och Miquelon</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TKL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tokelau</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TWN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Taiwan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UTL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övrigt utland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UMI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Amerikanska, mindre utliggande öar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MNE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Montenegro</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SRB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Serbien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BLR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vitryssland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MKD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Makedonien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Belgien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DEU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tyskland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DNK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Danmark</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Finland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NOR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Norge</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SWE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sverige</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NLD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nederländerna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LUX">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Luxemburg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FRA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frankrike</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GBR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Storbritannien och Nordirland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ESP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spanien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Grekland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AUT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Österrike</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ITA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Italien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ISL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Island</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IRL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Portugal</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ALB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Albanien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AFG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Afghanistan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AND">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Andorra</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ARG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Argentina</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ARM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Armenien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ATG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Antigua och Barbuda</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AGO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Angola</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Australien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AZE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Azerbajdjan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BHS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bahamas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BHR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bahrain</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ATF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Franska Sydterritorierna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FRO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Färöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MNP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Norra Marianaöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NFK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Norfolkön</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PYF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Franska Polynesien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SJM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Svalbard och Jan Mayen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TCA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Turks- och Caicosöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WLF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Wallis- och Futunaöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VIR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Jungfruöarna, USA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VGB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Jungfruöarna, Brittiska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BVT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bouvetön</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FXX">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frankrike, Metropolitan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HMD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Heardön och McDonaldön</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SGS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sydgeorigien och Södra Sandwichöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TMP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Östtimor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IOT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Brittiska Indiska Oceanöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BGD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bangladesh</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BRB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Barbados</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BLZ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Belize</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BEN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Benin</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DZA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Algeriet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BTN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bhutan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bolivia</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BIH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bosnienhercegovina</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BWA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Botswana</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BRA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Brasilien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BRN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Brunei Darussalam</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BGR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bulgarien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BFA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Burkina Faso</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BDI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Burundi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KHM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kambodja</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CMR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kamerun</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CAN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kanada</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CPV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kap Verde</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CAF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Centralafrikanska Republiken</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CHL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Chile</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CHN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kina</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Colombia</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Comorerna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kongo</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CRI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Costa Rica</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HRV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kroatien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kuba</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CYP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Cypern</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CZE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tjeckien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DJI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Djibouti</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DMA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dominica</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DOM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dominikanska Republiken</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ECU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ecuador</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EGY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Egypten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SLV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">El Salvador</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GNQ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ekvatorialguinea</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ERI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Eritrea</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EST">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Estland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ETH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Etiopien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FJI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Fiji</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GAB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gabon</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GMB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gambia</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GEO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Georgien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GHA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ghana</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Grenada</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GTM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Guatemala</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Guinea</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GNB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Guinea-Bissau</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GUY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Guyana</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Haiti</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HND">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Honduras</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HUN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ungern</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IND">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Indien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IDN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Indonesien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IRN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Iran</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IRQ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Irak</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ISR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Israel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JAM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Jamaica</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JPN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Japan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="JOR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Jordanien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KAZ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kazakstan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KEN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kenya</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KIR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kiribati</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KWT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kuwait</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LAO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Laos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LVA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lettland</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LBN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Libanon</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lesotho</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LBR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Liberia</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LBY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Libyen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LIE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Liechtenstein</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LTU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Litauen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MDG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Madagaskar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MWI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Malawi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MYS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Malaysien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MDV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Maldiverna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MLI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mali</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MLT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Malta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MHL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Marshallöarna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MRT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Mauretanien</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

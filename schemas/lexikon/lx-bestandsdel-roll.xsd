@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="bestandsdel-roll">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Aktiv beståndsdel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ADJR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Adjuvans motsvarande</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ADJV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Adjuvans</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ARES">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Aktiv motsvarande (respondens)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COLO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Färgämne</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CONJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Konjugand till aktiv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MACT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillv.extrakt¿Aktiv substans</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEXT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tillverkningsextrakt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MISC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övrigt hjälpämne</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MISR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övrigt ämne motsvarande</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PMF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plasma Master File</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAMF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaccine Antigen Master File</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

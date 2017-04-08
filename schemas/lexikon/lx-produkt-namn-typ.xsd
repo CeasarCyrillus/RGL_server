@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="produkt-namn-typ">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="historiskt-medprodnamelegal">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Historiskt legalt namn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="historiskt-tradename">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Historiskt Handelsnamn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="medprodnamelegal">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Legalt namn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="tradename">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Handelsnamn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

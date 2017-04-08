@@ -1,0 +1,3502 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="lakemedelsform">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="POSION">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till lösning för jontofores</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SEAPOW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vävnadslim, pulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORPSAC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral pasta i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOJS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektionsvätska, lösning/ lösning för pricktest</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOJSPT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning/ lösning för pricktest</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EFTAFT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Brustablett + filmdragerad tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SSORSP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension och vätska till oral spray</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BEHDIS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bikupedispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UREEMU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uretralemulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUORSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ETPISS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endotracheopulmonary instillation, powder and solvent for suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GADIIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gas for dispersion for injection</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUIJEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, suspension i emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TAGRSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Film-coated tablet and gastroresistant granules in sachet</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OREMSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral emulsion i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GARGNA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gurgelvatten/nässköljvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OSUPFA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral suspension i förfylld oral applikator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VGTACR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginaltablett och kräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VGCACR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalkapsel, mjuk och kräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PBEHSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till bikupelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BHDISA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bikupedispersion i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BEHSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bikupelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSTBHS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och lösning till bikupelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLCAR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för kardioplegi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PORSUC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till oral/rektal suspension i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INHSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSPRSS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, depotsuspension i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOFI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till lösning för behandling av fisk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EMEMIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Emulsion till injektionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ETPPSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Instillationsvätska för luftvägarna, pulver till suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MAIMMA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Matrix till matrix för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EFGOSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Brusgranulat till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GADIIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gas till infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NADPSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näsdroppar, pulver till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EDPOSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppar, pulver till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NADLSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näsdroppar, frystorkat pulver till suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EADPSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örondroppar, pulver till suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GELFGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gel till gel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSMIM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver, vätska och matrix till matrix för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CHDITA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tuggtablett/dispergerbar tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOSOIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning till injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IOISSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intraokulär instillationsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POESSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till bihålelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POECGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till endocervikalgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COAGRA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dragerat granulat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLVFO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vätska till...</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GADIJF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gas till injektions-/infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POEMIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUIJPR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, suspension i förfylld injektor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUEMIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension till injektionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POIMPA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till pasta för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPPAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pasta för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOIJPR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning i förfylld injektor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOSP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till lösning för pricktest</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PODIIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POIMMA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till matrix för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POIOIO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till intraokulär instillationsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till gel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PODEGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till dentalgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POGIGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till tandköttsgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSEAL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till vävnadslim</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SODWMI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för användning i dricksvatten/mjölk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOBEHI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning till bikupestrip</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INVSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intravesikal suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUIJSV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, suspension i endosinjektionsflaska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INMGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intramammär gel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYORSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CONESO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till lösning för nebulisator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COOMSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till munhålelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOSOIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DICOIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dispersion till koncentrat till infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COCSOI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till koncentrat till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TACUSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett till kutan lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOBHSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning till bikupelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRSOIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, depotlösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOJDDC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning i kassett för dosdispenser</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUEIJE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension och emulsion till injektionsvätska,emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRUDWA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat för användning i dricksvatten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POUDWA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver för användning i dricksvatten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PASTIL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pastill</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOIFPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsvätska, lösning i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOJFPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektions- / infusionsvätska, lösning i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IVIMAP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intravitrealt implantat i applikator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HETEBA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örtte i påse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOFOIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsvätska, lösning och oral lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOINAD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsvätska, lösning i administreringssats</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUSPEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan spray, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POIMSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till suspension för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOININ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektions- / infusionsvätska, lösning i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTPAT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutant plåster</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYDRWA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver för användning i dricksvatten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORDRLI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Orala droppar, vätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSUSUI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och suspension till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COSPEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till spray, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUSOSP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension och lösning till spray</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORSUDR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral suspension för användning i dricksvatten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till intravesikal lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och lösning till injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SHDYHF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemodialysvätska/hemofiltrationsvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BUCFIL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Buckalfilm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSOIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLINF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLINJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOPAUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spädningsvätska för parenteral användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUSINJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CORESO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till rektallösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PORESO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till rektallösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PORESU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till rektalsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RECCAP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rektalkapsel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RECCRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rektalkräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RECEMU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rektalemulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RECFOA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rektalskum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RECGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rektalgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RECOIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rektalsalva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RECSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rektallösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RECSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rektalsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RECTAM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rektaltampong</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUPPOS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suppositorium</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TARESO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett till rektallösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TARESU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett till rektalsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ETIPSS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Instillationsvätska för luftväg, pulv er och vätska  till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ETPIPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Instillationsvätska för luftvägarna, pulver till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ETPISO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Instillationsvätska för luftvägarna, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ETPISU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Instillationsvätska för luftvägarna, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EFVATA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginal brustablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEVATA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginaltampong</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PESSAR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vagitorium</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TAVASO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett till vaginallösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGCAH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalkapsel, hård</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGCAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalkapsel, mjuk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGCRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalkräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGDEV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalinlägg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGEMU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalemulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGFOA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalskum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGOIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalsalva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginallösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGSPO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalsvamp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGTAB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginaltablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IVLÖE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INFUSIONSVÄTSKA, LÖSNING, ENDOSBEHÅLLARE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOIJPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning, förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEDPAT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinskt plåster</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CODRWA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat för blandning i dricksvatten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSUIP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, suspension i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PODECE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Powder for dental cement</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENSISO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endosinusial solution</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EANADR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ear/nasal drops, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COEINF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till infusionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORRESU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral /rektalsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EDSSDC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppar, lösning i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOII">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektions-/infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOIJIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektions-/infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GOSUSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat till oral suspension i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GODSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat till orala droppar, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CODISO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till bad, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSUIV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till intravesikal användning, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRRGRD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depotgranulat till oral suspension i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORCUPA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral/kutan pasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SIFCIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsvätska/koncentrat till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EMINIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska/infusionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOINCA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning i cylinderampull</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOINPP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning i förfylld injektionspenna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUINPP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, suspension i förfylld injektionspenna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUINPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, suspension, förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORRESO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral lösning/rektallösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EADCSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örondroppar/kutan suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORPOSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oralt pulver i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSIVES">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektionsvätska/lösning för intravesikal användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SEGOSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension och brusgranulat till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SIJCIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska/koncentrat till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSUSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till oral suspension, dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till oral lösning i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLSEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösningar till vävnadslim</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SEEINF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning och emulsion till infusionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EEDRSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögon-/örondroppar, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EEDRSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögon-/örondroppar, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DICHTA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dispergerbar tablett/tuggtablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SCASOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för hårbotten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPPFS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Implantat i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KITIMP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Beredningssats för implantat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GELSAC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gel i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INOCSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning, för intraokulär användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYEAOI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögon-/öronsalva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSIJF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektions-/infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUSOIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension och vätska till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSOIV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till intravesikal användning, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NESOSD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för nebulisator i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRASAC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SHFHDF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemofiltrationsvätska/hemodiafiltrationsvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORSOSI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral lösning i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PERGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Periodontalgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOIV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till lösning för intravesikal användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PCSOIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till koncentrat till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYGESD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögongel i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSCUIC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till lösning för kutan/intrakavernös användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EDSUSD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppar, suspension i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABEFF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett och brustablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CSOCIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat och vätska till koncentrat till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POCUIC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till lösning för kutan/intrakavernös användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRPRGR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enterodepotgranulat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRPRGS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enterodepotgranulat, dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EMIJPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektions-/infusionsvätska, emulsion i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSPRSI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, depotsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COORSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till oral lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PERPOW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Periodontalpulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GATRCS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enterotablett och rektalsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORSUSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral suspension i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSCSIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till koncentrat till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOPRAP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för pricktestapplikator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYOSDC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögonsalva i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUINCA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, suspension, cylinderampull</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GOSOSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat till oral lösning i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OINCRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Salva och kräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NDSOSC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näsdroppar, lösning i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FBIJV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">FÖR BEREDNING AV INJEKTIONSVÄTSKA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FILTA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">FILMDRAGERADE TABLETTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRANU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">GRANULAT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IJFSB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INJEKTIONS- OCH INFUSIONSSUBSTANS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SHFHDY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemofiltrationsvätska/hemodialysvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GELSDC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gel i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSIJP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, lösning i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PLÅST">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PLÅSTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VTAVCR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginaltablett och vaginalkräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENTGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intestinal gel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PORSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till oral/rektal suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SODRWA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för användning i dricksvatten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CSSIJF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat och vätska till injektions-/infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSSIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektionsvätska, lösning/suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LUSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYOSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver för suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYSOIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver till injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYSOIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PERINS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Peridontalinlägg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CHCASO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tuggkapsel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MECUSP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinerad kutan svamp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CSSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat och vätska till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PFGETU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förfylld sond för gastroenteral användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EADPSS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örondroppar, pulver och vätska till suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SIJEPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, suspension i emulsion i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VGTCRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vagitorium och kräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COORSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSOIIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektions-/infusions-/nebulisatorvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COMLOZ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Komprimerad sugtablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TRPATA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett och depotplåster</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSIPRG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektionsvätska, suspension, depotgranulat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOSOSC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spot-on, lösning i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LSSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver och vätska till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLPRT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för pricktest</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSGIGP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till tandköttsgel i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSOIJO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektionsvätska, lösning/oral lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STPOSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Löslig tablett och pulver till oral lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TSORSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett och vätska till rektal suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NAOMSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näs-/munhålelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COSUIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till infusionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMIFDC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intramammarium, sintidsbehandling</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEDSPO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinerad svamp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYDREM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppar, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSIPG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, suspension, depotgranulat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOINPU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för intraperitoneal användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUDRWA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension för användning i dricksvatten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSNDSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till näsdroppar, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PCSOII">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till koncentrat till injektions-/infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CSSOIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat och vätska till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSIJC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, lösning i cylinderampull</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INHGCG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsgas, komprimerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INHGLG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsgas, flytande</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CSOCSP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan lösning och medicinerad svamp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUPJIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension för injektion intill ögats bakre vägg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUSOJP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension och vätska till injektionsvätska, suspension, förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CODIIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORSUSI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral suspension i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PMF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plasma Master File</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAMF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaccine Antigen Master File</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYSSUN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver och vätska till suspension för nasal administrering</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSIFVE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till infusionsvätska/lösning för intravesikal användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSIFV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till infusionsvätska/lösning för intravesikal användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EDSOSP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depotögondroppar, lösning i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FCTEFG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Filmdragerad tablett och brusgranulat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPLT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">IMPLANTABLETTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INFKO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INFUSIONSKONCENTRAT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INFSB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INFUSIONSSUBSTANS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INFSK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INFUSIONSSUBSTANS (I+II)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INFVÄ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INFUSIONSVÄTSKA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INHAL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INHALATIONSLÖSNING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INHVÄ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INHALATIONSVÄTSKA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INJLÖ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INJEKTIONSLÖSNING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INJSB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INJEKTIONSSUBSTANS</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INJSK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INJEKTIONSSUBSTANS I+II</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INJVÄ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INJEKTIONSVÄTSKA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INKVÄ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INFUSIONSKONCENTRAT OCH INFUSIONSVÄTSKA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INVLÖ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">INJEKTIONSVÄTSKA, LÖSNING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KAPSL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">KAPSLAR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KIVLÖ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">KONCENTRAT TILL INJEKTIONSVÄTSKA, LÖSNING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KOINV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">KONCENTRAT TILL INFUSIONSVÄTSKA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DISINJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUBSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sublingual lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABCHE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett och tuggtablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYSOSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver och vätska till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PLEPTE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plåster för epikutantest</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMMEST">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Salvstrumpa</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRGRSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depotgranulat i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSDIIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CSIJIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till injektions-/infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOBFMO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för modifiering av blodfraktion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BOMAPA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Benmatrix, pasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BOMAPU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Benmatrix, kitt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUSPGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan spray, gel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IOTRSY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Jontoforetiskt transdermalt system</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSIIO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, lösning för intraokulär användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLHHH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemofiltrationsvätska/hemodialysvätska/hemodiafiltrationsvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSUIM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till implantation, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PPCLDF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätskor till koncentrat för infusionsvätska, liposom-dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOIJIV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska/lösning för intravesikal användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORMUCR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålekräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOSCTE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för risttest</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOPRTE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för provokationstest</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PLPRTE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plåster för provokationstest</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PCDSIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till koncentrat och vätska till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEGACO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinsk gas, komprimerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEGACR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinsk gas, kryogen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEGALI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinsk gas, flytande</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSEMIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRPRTA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enterodepottablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TAGRTA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett och enterotablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GSORSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat och vätska till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LSUONS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver till suspension för okulonasal eller sprayadministrering</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OROFIL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munsönderfallande film</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SIJCIP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska/koncentrat till infusionsvätska, lösning i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORDRGR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Orala droppar, granulat till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POFOIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till intravesikal lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AVLIVV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Avlivningsvätska för djur</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POHAEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till koncentrat till hemodialysvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORLASO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhåle-/laryngofaryngeal lösning/spray</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INVAIM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsånga, impregnerad kudde</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VACASO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalkapsel, mjuk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TRAGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Transdermal gel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POFODE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till dentallösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TRSPSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Transdermal spray, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MOPOSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munsköljvätska, pulver till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OROOIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålesalva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COGRSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dragerat granulat i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASPIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nässpray, lösning i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POFOCO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till koncentrat till intravesikal suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUNAOI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan salva/nässalva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASPPO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nässpray, pulver till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DIFOIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CONINT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till intravesikal lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NAORSP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näs-/munhålespray, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INTSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intravesikal lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRORRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat till oral suspension/rektalsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOINNE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning i nålfri injektor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BEHIGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bikupegel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POGEGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och gel till gel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASOOR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nässpray/munhålelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COPEDI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till peritonealdialysvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EAEYNA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öron-/ögon-/näsdroppar, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PODIIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver, dispersion och vätska till koncentrat till infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INIMPA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Impregnerad inhalationskudde</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POINSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till intravesikal suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INPESO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intraperitoneal lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, depotsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRSIPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, depotsuspension i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GEMEPU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gel i doseringspump</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSIPP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, lösning i förfylld injektionspenna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSONE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till lösning för nebulisator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INTFOA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intrauterint skum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TDISPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spendopp/spray, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EAEYOI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öron-/ögonsalva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEDTHR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinerad tråd</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PODRWA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver för användning i dricksvatten/mjölk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VCSVCR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalkapsel, mjuk och vaginalkräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTORO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan lösning/koncentrat till munhålelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEDCOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinskt halsband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GELPRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gel i tryckbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSDECE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Powder and solution for dental cement</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SODECE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Solution for dental cement</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EDPOSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Eye drops, powder for suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LÖALL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">LÖSNING FÖR ALLERGITEST</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LÖDES">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">LÖSNING FÖR DESINFEKTION</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DENCEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dental cement</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LÖSNG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">LÖSNING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MIXTR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">MIXTUR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BADOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">BADOLJA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DEPBO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">DEPOTBOLI</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DEPKA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">DEPOTKAPSLAR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUBFIL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sublingual film</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POFOEP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till epilesionalvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POEPSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till epilesionalvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EADRIS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örondroppar, suspension i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EAEYDR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öron-/ögondroppar, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TRASOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Transdermal lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORSOSA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral lösning i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LITIEQ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Levande vävnadsersättning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORSPSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålespray, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POFOFO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till koncentrat och lösning till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORSPEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålespray, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORSPSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålespray, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning och suspension till injektionsvätska, suspension i förfylld spruta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SEAMAT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Matrix till vävnadslim</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSPRSP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till injektionsvätska, depotsuspension i förfylld injektionspenna</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OPHSTR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögonremsa</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DOSDIC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kassett för dosdispenser</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DISTAD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dispergerbara tabletter för dosdispenser</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYSSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver och vätska till suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOINJA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning i administreringssats</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="isosol">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intravesikal lösning/injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYONSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver till okulonasal suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POCUSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till kutan lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPMAT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Matrix för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PODIIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EADSOS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örondroppar, lösning i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYSNDS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver och vätska till näsdroppar, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CONTAI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Behållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LSUSIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver och suspension till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INGLUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intraglandulär användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PISSFI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till intravesikal lösning/injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EDSSSI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppar, suspension i endosbehållare</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GASDIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gas och vätska till injektions-/infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABVAG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett och vaginaltablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TRASYS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Transdermalt system</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PCDIIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till koncentrat till infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DOSDIS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dosdispenser</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COSIOI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till spolvätska, lösning för intraokulär användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRRESU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat till rektalsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POWSSY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till sirap</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLIOI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spolvätska, lösning för intraokulär användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DOSGR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">DOSGRANULAT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DOSPU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">DOSPULVER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DROPP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">DROPPAR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENTKA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ENTEROKAPSLAR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POORSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POWSYR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till sirap</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSORSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till oral lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSORSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLTAB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Löslig tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SYRUP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sirap</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BUCTAB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Buckaltablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CONGAR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till gurgelvatten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GAPOSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gurgelvatten, pulver till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GARGLE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gurgelvatten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GATASO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gurgelvatten, tablett till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GINGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tandköttsgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GINPAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tandköttspasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GINSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tandköttslösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LOZENG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sugtablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MECHGU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinskt tuggummi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SPRLÖ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">SPRAYLÖSNING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUSPN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">SUSPENSION</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABLR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">TABLETTER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TAMPO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">TAMPONGER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TRFDB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">TRÅD FÖR DENTALT BRUK</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ÖGDRO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ÖGONDROPPAR</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BATADD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Badtillsats</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COCUSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till kutan lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COLLAR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Halsband</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COLLOD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kollodium</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CREAM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUSPPO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan spray, pulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUSPSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan spray, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUSPSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan spray, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NÄSPY">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">NÄSSPRAY</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OSPEC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">FORM OSPECIFICERAD</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PASTA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PASTA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PINFV">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PULVER TILL INFUSIONSVÄTSKA</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PULLÖ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PULVER, LÖSLIGT</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PULVR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PULVER</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PUTLÖ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">PULVER TILL LÖSNING</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTEMU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTFOA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutant skum</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTLIQ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan vätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTPAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan pasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTPOW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Puder</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTSPO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan svamp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTSTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutant stift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CUTSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kutan suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DIPEMU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bad, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DIPSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bad, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DIPSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bad, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EARTAG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronbricka</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GEL1">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPDRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Salvkompress</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEDPEN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinerad manchett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MENALA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinskt nagellack</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OINTME">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Salva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POONEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pour-on, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POONSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pour-on, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POONSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pour-on, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POULTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinskt omslag</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SHAMPO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Schampo</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOIOPH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för jontofores</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SPONEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spot-on, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SPONSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spot-on, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SPONSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spot-on, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TEDIEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spendopp, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TEDISO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spendopp, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TEDISU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spendopp, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TESPSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spenspray, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TRAPAT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depotplåster</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DENEMU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dentalemulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DENGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dentalgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DENINS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dentalinlägg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DENPOW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dentalpulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DENSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dentallösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DENSTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dentalstift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DENSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dentalsuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TOOPAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tandkräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COHDSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till hemodialysvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOHADF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemodiafiltrationsvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOHADI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemodialysvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOHAFI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Hemofiltrationsvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOPEDI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Peritonealdialysvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EADREM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örondroppar, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EADRSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örondroppar, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EADRSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örondroppar, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EARCRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronkräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EARGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örongel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EAROIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronsalva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EARPOW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronpulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EARSTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronstift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EARTAM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örontampong</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EASPEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronspray, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EASPSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronspray, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EASPSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronspray, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EAWAEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronsköljvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EAWASO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Öronsköljvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ENCEGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Endocervikalgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSECG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till endocervikalgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BEHIST">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bikupestrip</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BESMPA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rökpapper för bi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BESMST">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rökstift för bi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NEBNSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nebulisationslösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EDPRRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depotögondroppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EDPSSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppar, pulver och vätska till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EDPSSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppar, pulver och vätska till suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYDRSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppar, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYDRSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögondroppar, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYDSRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vätska för beredning av ögondroppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYECRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögonkräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYEGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögongel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYELOT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögonsköljvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYEOIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögonsalva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EYLSRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vätska för beredning av ögonsköljvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OPHINS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ögonlamell</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPCHA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kedja för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPLAN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Implantat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPTAB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett för implantation</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INHGAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsgas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INHPOW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationspulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INPOHC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationspulver, hård kapsel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INPOPD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationspulver, avdelad dos</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INVACA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsånga, kapsel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INVALI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsånga, vätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INVAOI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsånga, salva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INVAPO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsånga, pulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INVASO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsånga, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INVATA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsånga, tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NEBREM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Emulsion för nebulisator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NEBRSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för nebulisator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NEBRSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Suspension för nebulisator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PONESO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till lösning för nebulisator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PONESU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till suspension för nebulisator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRINEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsspray, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRINSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsspray, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRINSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsspray, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INMAEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intramammär emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INMAOI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intramammär salva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INMASO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intramammär lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INMASU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intramammär suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TEASTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spenstift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INUTCA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intrauterin kapsel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INUTDE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intrauterint inlägg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INUTEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intrauterin emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INUTSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intrauterin lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INUTSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intrauterin suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INUTTA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intrauterin tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BLAIRR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spolvätska för urinblåsan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POBLIR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till spolvätska för urinblåsan</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOIVEU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Lösning för intravesikal användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UREGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uretralgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MOUWAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munsköljvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MOUWTS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munsköljvätska, tablett till lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MUADBT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Buckaltablett, häftande</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORMUCA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålekapsel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORMUDR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhåledroppar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORMUGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålegel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORMUPA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålepasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORMUSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålelösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORMUSP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålespray</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORMUSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålesuspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SULISP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sublingualspray</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SULITA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Resoriblett, sublingual</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CACHET">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oblatkapsel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CAPHAR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kapsel, hård</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CAPSOF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kapsel, mjuk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CHETAB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tuggtablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COATAB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dragerad tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CRIRUD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intraruminalinlägg, kontinuerlig frisättning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EFFGRA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Brusgranulat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EFFPOW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Bruspulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EFFTAB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Brustablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FICOTA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Filmdragerad tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GARECH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enterokapsel, hård</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GARECS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enterokapsel, mjuk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GAREGR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enterogranulat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GARETA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enterotablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRANUL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="INHETE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örtte, lösligt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LICBLO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Slicksten</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEDPEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicinska pelleter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MORCAH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kapsel med modifierad frisättning, hård</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MORCAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kapsel med modifierad frisättning, mjuk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MOREGR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat med modifierad frisättning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MORETA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett med modifierad frisättning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORAGUM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oralt gummi</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORALYO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkad tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORAPOW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oralt pulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORDITA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munsönderfallande tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PILLUL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granuler</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRIRUD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intraruminalinlägg, periodvis frisättning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRMEFE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Premix till medicinfoder</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRRECH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depotkapsel, hård</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRRECS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depotkapsel, mjuk</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRREGR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depotgranulat</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRRETA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depottablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABLET">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COSINF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="COSINJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat till injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EMUINF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Infusionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="EMUINJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSUIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till injektionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSSOIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="URESTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Uretralstift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GAENEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gastroenteral emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GAENSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gastroenteral lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GAENSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Gastroenteral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IMPPAD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Impregnerad kudde</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IRRSOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Spolvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KIRAPR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Beredningssats för radioaktivt läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSOSE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till vävnadslim</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RANUGE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Radionuklidgenerator</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RAPHPR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Stamlösning till radioaktiva läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SEALAN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vävnadslim</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOORPR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vätska för organförvaring</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="STOIRR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Magspolvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="WOUSTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Sårstift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NADREM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näsdroppar, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NADRSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näsdroppar, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NADRSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näsdroppar, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASCRE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näskräm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näsgel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASOIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nässalva</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASPEM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nässpray, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASPOW">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Näspulver</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASPSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nässpray, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASPSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nässpray, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASSTI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nässtift</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NASWAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Nässköljvätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DISTAB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Dispergerbar tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRASYR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat till sirap</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRORSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat till oral lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRORSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Granulat till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HERTEA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Örtte</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORAEMU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORAGEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral gel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORALIQ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral vätska</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORAPAS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral pasta</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORASOL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORASUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORDREM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Orala droppar, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORDRSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Orala droppar, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ORDRSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Orala droppar, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POORSO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till oral lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PRGOSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Depotgranulat till oral suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LSOIJF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver till injektions-/infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DSIJIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektions-/infusionsvätska, dispersion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VAGDEL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vaginalinlägg</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ESUEIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Emulsion och suspension till injektionsvätska, emulsion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LYSUIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frysttorkat pulver till infusionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POUCHH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pouch</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSNDSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till näsdroppar, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LSSOIJ">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Frystorkat pulver och vätska till injektionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOLINH">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Inhalationsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="POSUIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver till infusionsvätska, suspension</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GRGSUS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Enterogranulat till oral suspension i dospåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CODLIF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Koncentrat och spädningsvätska till infusionsvätska, lösning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SOIJPC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Injektionsvätska, lösning i förfylld spruta/cylinderampull</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PSISIU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Pulver och vätska till instillationsvätska, lösning för intraokulär användning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OMPOPO">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Munhålepulver i portionspåse</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

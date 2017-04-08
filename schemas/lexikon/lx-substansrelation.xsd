@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="substansrelation">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CHILD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Har dotter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PARENT">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Har moder</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

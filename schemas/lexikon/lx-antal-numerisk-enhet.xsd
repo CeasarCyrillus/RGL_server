@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="antal-numerisk-enhet">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="103">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">timme</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="108">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">gram /  0.5 gram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="152">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrol per ml</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="209">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">gram / 0.25 gram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="46">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">E</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="56">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="82">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">dospåsar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="86">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kulor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="AHF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ahf</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CAPS">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kapsel/kapslar</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">cm</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="CM2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kvadratcentimeter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DOSER">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">dos(er)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="DYGN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">dygn</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="G">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">gram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="GA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">gram aktiv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">IE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kilogram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KIE">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kIE</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="KUL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">kulor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="L">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">liter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MCGRA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrogram aktiv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milligram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MGA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milligram aktiv</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MICROG">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrogram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MICROL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikroliter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ML">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milliliter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MLREC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milliliter rekonstituerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MÅNAD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">månad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ST">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">styck</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SUPP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">suppositorium/suppositorier</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TABL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">tablett(er)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

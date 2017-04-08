@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="enhet-ddd">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="87">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">liter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LSU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">lipoproteinlipasfrisättande enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">miljoner enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TU">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">tusen enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="U">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">enheter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="UD">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">unit dose</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="g">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">gram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mcg">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">mikrogram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mg">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milligram</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ml">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">milliliter</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="mmol">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">millimol</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="tablet">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">tablett</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="produkt-typ">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="A58">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Article 58 WHO Läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ALK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Teknisk sprit</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="ALL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Allergen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="APL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Extemporeläkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="BER">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Extempore (enskilda extemporeberedningar, ej lagerberedningar och rikslicenser)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="FOR">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förbrukningsartiklar som omfattas av förmånen</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HOM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Homeopatiskt läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="IPL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Intern produktlista för Apotekens Service AB</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LIC">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Licensläkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="LLI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Livsmedel f. ssk näringsändamål till vuxna över 16 år (momsplikt, landstingsbidrag)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MEP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MF">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Plasma Master File/Vaccine Antigen Master File</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="MTK">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Medicintekniska produkter med läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NIN">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Naturmedel för injektion</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="NLM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Naturläkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="OVL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Övriga landstingssubventionerade varor</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="PLI">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Livsmedel f. ssk näringsändamål till barn under 16 år</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RAP">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Radiofarmaka</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TJA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Tjänster</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="TVB">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Traditionellt växtbaserade läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VBL">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Växtbaserade läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="VUM">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Vissa utvärtes läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

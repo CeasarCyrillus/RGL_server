@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="varutyp">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="EX">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Icke receptbelagt läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="HA">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Handelsvara</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="RX">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Receptbelagt läkemedel</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

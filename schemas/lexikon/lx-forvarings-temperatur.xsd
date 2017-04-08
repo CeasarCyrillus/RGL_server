@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lex="urn:schemas-asab:lexikon" targetNamespace="urn:schemas-asab:lexikon">
+  <xs:simpleType name="forvarings-temperatur">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="-">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ospecificerad</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ingen särskild temperaturbegränsning</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="10">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">2° C - 8° C. Får ej frysas.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="11">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras i fryst tillstånd vid -18° C.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="12">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Får ej frysas</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="13">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Får ej kylförvaras</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="14">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Får ej förvaras under 4° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="15">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">37° C (kroppstemperatur)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="16">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 15° C. Får ej frysas.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="17">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">18° C - 25° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="18">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ej under 15° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="19">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 25° C. Ej under 15° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="2">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 30° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="20">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras i fryst tillstånd vid -196° C (flytande kväve)</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="21">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras i fryst tillstånd vid -70° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="22">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ej under -5° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="23">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras i fryst tillstånd vid högst -60° C.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="24">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 36° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="25">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras +4°C till +30°C. Skydd mot kyla. Ej frys.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="26">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Ej över +37°C.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="27">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst +32° C. Får ej frysas.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="28">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras +4°C till +25°C.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="29">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras +33°C till +37°C.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="3">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 25° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="30">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst +37°C. Får ej frysas.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="31">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras +4°C till +30°C.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="32">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras i frys tillstånd vid -90° C - -70° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="33">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Förvaras i fryst tillstånd vid -140° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="4">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">2° C - 8° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="5">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 30° C. Får ej kylförvaras.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="6">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 30° C. Får ej frysas.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="7">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 25° C. Får ej kylförvaras.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="8">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 25° C. Får ej frysas.</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="9">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 15° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="H">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Högst 25° C</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="K">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Kallt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="R">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Rumstemp</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="S">
+        <xs:annotation>
+          <xs:documentation xml:lang="sv">Svalt</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
