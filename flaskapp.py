@@ -5,6 +5,7 @@ import xml.etree.cElementTree as ET
 from bs4 import BeautifulSoup
 import codecs
 import requests
+import _thread
 
 app = Flask(__name__)
 
