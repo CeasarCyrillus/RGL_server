@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import codecs
 import requests
 
-app = Flask("app")
+app = Flask(__name__)
 
 	
 @app.route('/uploader', methods = ['GET', 'POST'])
