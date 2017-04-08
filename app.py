@@ -27,6 +27,3 @@ def home():
 	with open("index.html", "r") as f:
 		page_content = f.read()
 	return page_content
-
-#if __name__ == "__main__":
-app.run(debug=True)
