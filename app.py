@@ -1,11 +1,9 @@
 from flask import Flask, render_template, request
 from werkzeug import secure_filename
 from format_phonegap import format_data
-from bs4 import BeautifulSoup
 import xml.etree.cElementTree as ET
 from bs4 import BeautifulSoup
 import codecs
-import os
 import requests
 import _thread
 
