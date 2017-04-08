@@ -28,7 +28,6 @@ def format_data():
 	f = codecs.open("temp_data.txt", "w", "utf-8")
 	alla_preperat = []
 	for i in range(len(text)):
-		print(i+1, "/", len(text), flush=True),
 		soup = BeautifulSoup(str(text[i]), "html.parser")
 		if soup is not None:
 			name = soup.find("def:produktnamn")
@@ -167,7 +166,6 @@ def format_data():
 			prep = name + ";" + form + ";" + ic_and_ooc[ic] + ";" + ic_and_ooc[ooc] + ";" + forbud + ";" + dispens + ";" + ovrigt + ";" + ean + ";" + klass + ";;";
 			alla_preperat.append(prep)
 		i += 1
-		print(i, "/", len(total), flush=True),
 
 	alla_preperat = list(set(alla_preperat))
 	print("Antal preperat:", len(alla_preperat))
@@ -175,6 +173,6 @@ def format_data():
 	with open("databas.txt", "w") as f:
 		for pr in alla_preperat:
 			f.write(pr)
-	with open('databas_phonegap.txt', 'rb') as f:
+	with open('databas.txt', 'rb') as f:
 		r = requests.post('http://fecabook.hol.es/static2/upload.php', files={'databas.txt': f})
 	print("Klar!")
